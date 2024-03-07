@@ -51,11 +51,13 @@ Another example of a message is present in the same manual, on page 14:
  </USERMSG>
 </DOC>
 ```
-# Commits
-Let's follow the following commit format, to adopt a standard message:
-- action(location): description
+# How do I commit and PR?
+Let's follow the following committing format, to adopt a standard pattern:
+- "action(scope): description"
 
-- Ex: 
-  - feat(docs): improving description
-  - fix(bug01): improving description
-  - chore(docs): improving description
+### Examples: 
+  - "feat(routes.js): added /getUUID route"
+  - "fix(bug01): fixed homepage bug when clicking at hero"
+  - "chore(package.json): added a new typescript type package dependency"
+
+Useful references: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
