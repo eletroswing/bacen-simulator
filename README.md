@@ -1,5 +1,5 @@
 # bacen-simulator
-BacenSimulator is a docker image to simulate bacen, a official brazilian payment infrastructure
+BacenSimulator is a docker image to simulate bacen, an official Brazilian payment infrastructure.
 
 # Idea
 It aims to be a complete docker simulation system based on the following documents:
@@ -7,12 +7,12 @@ It aims to be a complete docker simulation system based on the following documen
 - [More about pix message protocol](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_VI_Versao_507.pdf)
 
 # Stack
-To be defined(should be something easy)
+To be defined (should be something easy).
 
-# The commnuication itself
+# The communication itself
 All messages exchanged in the system follow the standards established in the documentation, therefore, XML (*extensible markup language*) will be used in the body of the messages.
 
-An example message is shown in the [*Catalogo de servicos do SFN volume 3*](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf), page 11:
+An example message is shown in the [*Catálogo de serviços do SFN volume 3*](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf), page 11:
 ```xml
 <?xml version="1.0"?>
 <DOC xmlns=”http://www.bcb.gov.br/XXX/YYYYYYY.xsd”>
