@@ -1,18 +1,19 @@
 # bacen-simulator
-BacenSimulator is a docker image to simulate bacen, a official brazilian payment infrastructure
+BacenSimulator is a docker image to simulate bacen, an official Brazilian payment infrastructure.
 
 # Idea
 It aims to be a complete docker simulation system based on the following documents:
-- [Message Protocol](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf)
-- [More about pix message protocol](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_VI_Versao_507.pdf)
+- [Message Protocol Vol. III](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf)
+- [Message Protocol Vol. VI (Pix Mentioned)](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_VI_Versao_507.pdf)
+- [PIX Initiation Patterns Handbook](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf#page32)
 
 # Stack
-To be defined(should be something easy)
+To be defined (should be something easy).
 
-# The commnuication itself
+# The communication itself
 All messages exchanged in the system follow the standards established in the documentation, therefore, XML (*extensible markup language*) will be used in the body of the messages.
 
-An example message is shown in the [*Catalogo de servicos do SFN volume 3*](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf), page 11:
+An example message is shown in the [*Catálogo de serviços do SFN volume 3*](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf), page 11:
 ```xml
 <?xml version="1.0"?>
 <DOC xmlns=”http://www.bcb.gov.br/XXX/YYYYYYY.xsd”>
@@ -51,11 +52,13 @@ Another example of a message is present in the same manual, on page 14:
  </USERMSG>
 </DOC>
 ```
-# Commits
-Let's follow the following commit format, to adopt a standard message:
-- action(location): description
+# How do I commit and PR?
+Let's follow the following committing format, to adopt a standard pattern:
+- "action(scope): description"
 
-- Ex: 
-  - feat(docs): improving description
-  - fix(bug01): improving description
-  - chore(docs): improving description
+### Examples: 
+  - "feat(routes.js): added /getUUID route"
+  - "fix(bug01): fixed homepage bug when clicking at hero"
+  - "chore(package.json): added a new typescript type package dependency"
+
+Useful references: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
