@@ -3,8 +3,9 @@ BacenSimulator is a docker image to simulate bacen, an official Brazilian paymen
 
 # Idea
 It aims to be a complete docker simulation system based on the following documents:
-- [Message Protocol](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf)
-- [More about pix message protocol](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_VI_Versao_507.pdf)
+- [Message Protocol Vol. III](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_III_Versao_507.pdf)
+- [Message Protocol Vol. VI (Pix Mentioned)](https://www.bcb.gov.br/content/estabilidadefinanceira/cedsfn/Catalogos/Catalogo_de_Servicos_do_SFN_Volume_VI_Versao_507.pdf)
+- [PIX Initiation Patterns Handbook](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/II_ManualdePadroesparaIniciacaodoPix.pdf#page32)
 
 # Stack
 To be defined (should be something easy).
