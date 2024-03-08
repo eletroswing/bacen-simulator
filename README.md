@@ -54,12 +54,5 @@ Another example of a message is present in the same manual, on page 14:
  </USERMSG>
 </DOC>
 ```
-# How do I commit and PR?
-
-After you run git add, instead `git commit`, run:
-```sh
-npm run commit
-``` 
-In this way the tool will help you with the commit messages, after that just run `git push`.
-
-Useful references: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+# How do I contribute?
+Please check the contribution docs on (contributing.md)[CONTRIBUTING.md].
