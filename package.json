@@ -4,8 +4,8 @@
   "description": "BacenSimulator is a docker image to simulate Bacen, a official Brazilian payment infrastructure",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "ts-node -r tsconfig-paths/register ./api/server.ts",
-    "dev": "ts-node-dev -r tsconfig-paths/register ./api/server.ts",
+    "start": "ts-node -r tsconfig-paths/register ./apps/api/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register ./apps/api/server.ts",
     "commit": "cz"
   },
   "config": {

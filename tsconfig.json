@@ -8,9 +8,9 @@
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
         "paths": {
-            "@api/*": ["./api/*"],
-            "@infra/*": ["./infra/*"],
+            "@api/*": ["./apps/api/*"],
+            "@package/*": ["./package/*"],
         }
     },
-    "include": ["api/*", "api/**/*"],
+    "include": ["apps/*", "apps/**/*"],
 }
