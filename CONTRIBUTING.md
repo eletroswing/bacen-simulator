@@ -15,7 +15,7 @@ There are two ways you can proceed, use:
 ```sh
 npm i
 ```
-para instalar os módulos atualizados ou:
+to install the updated modules, or:
 ```sh
 npm ci
 ```
