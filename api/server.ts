@@ -1,16 +1,18 @@
-import fastify from 'fastify'
+import fastify, { FastifyInstance } from 'fastify'
+import logger from '@infra/logger';
 
-const server = fastify();
+const server: FastifyInstance = fastify();
 
 //! Each route to his respectively folder/{route}
 // server.get('/ping', async (request, reply) => {
-//   return 'pong\n'
-// })
-
-server.listen({ port: 8080 }, (err, address) => {
+  //   return 'pong\n'
+  // })
+  
+const server_port: number = Number(process.env.PORT) || 8080;
+server.listen({ port: server_port }, (err, address) => {
   if (err) {
-    console.error(err)
-    process.exit(1)
+    logger.error(err);
+    process.exit(1);
   }
-  console.log(`Server listening at ${address}`)
+  logger.log(`Server listening at ${address}`);
 })
