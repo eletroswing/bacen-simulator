@@ -1,5 +1,5 @@
 import fastify, { FastifyInstance } from 'fastify'
-import logger from '@infra/logger';
+import logger from '@package/infra/logger';
 
 const server: FastifyInstance = fastify();
 
