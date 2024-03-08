@@ -6,6 +6,9 @@
     "build": "tsc -p tsconfig.json",
     "start": "ts-node -r tsconfig-paths/register ./api/server.ts",
     "dev": "ts-node-dev -r tsconfig-paths/register ./api/server.ts",
+    "migration": "npm run migration:run && npm run migration:seed",
+    "migration:run": "ts-node -r tsconfig-paths/register ./infra/migrate.ts",
+    "migration:seed": "ts-node -r tsconfig-paths/register ./infra/seed_database.ts",
     "commit": "cz"
   },
   "config": {
