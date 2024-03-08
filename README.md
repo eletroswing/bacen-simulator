@@ -55,4 +55,4 @@ Another example of a message is present in the same manual, on page 14:
 </DOC>
 ```
 # How do I contribute?
-Please check the contribution docs on (contributing.md)[CONTRIBUTING.md].
+Please check the contribution docs on [contributing.md](CONTRIBUTING.md).
