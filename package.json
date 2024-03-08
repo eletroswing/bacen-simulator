@@ -1,8 +1,10 @@
 {
   "name": "bacen-simulator",
   "version": "0.0.1",
-  "description": "BacenSimulator is a docker image to simulate bacen, a official brazilian payment infrastructure",
+  "description": "BacenSimulator is a docker image to simulate Bacen, a official Brazilian payment infrastructure",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node /api/server.js",
     "commit": "cz"
   },
   "config": {
@@ -14,6 +16,14 @@
   "author": "eletroswing",
   "license": "MIT",
   "devDependencies": {
-    "commitizen": "^4.3.0"
+    "@types/node": "^20.11.25",
+    "commitizen": "^4.3.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "fastify-xml-body-parser": "^2.2.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.22.4"
   }
 }
