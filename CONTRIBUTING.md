@@ -21,6 +21,20 @@ npm ci
 ```
 to install from package-lock!
 
+# The migrations
+To run the migrations there are a few commands before starting using. They are:
+```sh
+npm run migration:run
+```
+To create tables, and: 
+```sh
+npm run migration:seed
+```
+To insert some testing values on db. To run both of them at the same time, run:
+```sh 
+npm run migration
+```
+
 # Making the commit
 To avoid straying too far from the commit structure, when you finish your changes, use the command to add (`git add`) followed by (remember to run the installation of dependencies):
 
