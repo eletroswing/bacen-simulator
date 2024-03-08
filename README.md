@@ -10,7 +10,12 @@ It aims to be a complete docker simulation system based on the following documen
 - [Official DICT API](https://www.bcb.gov.br/content/estabilidadefinanceira/pix/API-DICT-2.0.1.html)
 
 # Stack
-To be defined (should be something easy).
+- [Fastify](https://fastify.dev/)
+- [XML Body Parser (fastify middleware)](https://www.npmjs.com/package/fastify-xml-body-parser?activeTab=readme)
+- [Sqlite3] (https://www.npmjs.com/package/sqlite3)
+- [Commitizen](https://github.com/commitizen/cz-cli)
+- [Typescript](https://www.typescriptlang.org/download)
+- [Zod for data validation](https://zod.dev/)
 
 # The communication itself
 All messages exchanged in the system follow the standards established in the documentation, therefore, XML (*extensible markup language*) will be used in the body of the messages.
