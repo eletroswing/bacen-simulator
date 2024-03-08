@@ -1,0 +1,19 @@
+{
+  "name": "bacen-simulator",
+  "version": "0.0.1",
+  "description": "BacenSimulator is a docker image to simulate bacen, a official brazilian payment infrastructure",
+  "scripts": {
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": "https://github.com/eletroswing/bacen-simulator",
+  "author": "eletroswing",
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^4.3.0"
+  }
+}

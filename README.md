@@ -55,12 +55,11 @@ Another example of a message is present in the same manual, on page 14:
 </DOC>
 ```
 # How do I commit and PR?
-Let's follow the following committing format, to adopt a standard pattern:
-- "action(scope): description"
 
-### Examples: 
-  - "feat(routes.js): added /getUUID route"
-  - "fix(bug01): fixed homepage bug when clicking at hero"
-  - "chore(package.json): added a new typescript type package dependency"
+After you run git add, instead `git commit`, run:
+```sh
+npm run commit
+``` 
+In this way the tool will help you with the commit messages, after that just run `git push`.
 
 Useful references: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
