@@ -243,6 +243,10 @@ settings.json
 
 ### Turbo Bundler Log Folder
 .turbo
+### Turbo Task Artifacts
+build/**
+dist/**
+.next/**
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,docusaurus
 
