@@ -15,7 +15,7 @@ To read all the api files, or see the flux in images, please, go to [docs.](DOC.
 
 # Stack
 - [Fastify](https://fastify.dev/)
-- [XML Body Parser (fastify middleware)](https://www.npmjs.com/package/fastify-xml-body-parser?activeTab=readme)
+- [Fast XML parser](https://www.npmjs.com/package/fast-xml-parser)
 - [Sqlite3](https://www.npmjs.com/package/sqlite3)
 - [Commitizen](https://github.com/commitizen/cz-cli)
 - [Typescript](https://www.typescriptlang.org/download)
