@@ -4,9 +4,9 @@ import logger from '@package/infra/logger';
 const server: FastifyInstance = fastify();
 
 //! Each route to his respectively folder/{route}
-// server.get('/ping', async (request, reply) => {
-  //   return 'pong\n'
-  // })
+server.get('/welcome', async (request, reply) => {
+  reply.code(200).send({ success: true, message: "Welcome to Bacen Simulator!" });
+})
   
 const server_port: number = Number(process.env.PORT) || 8080;
 server.listen({ port: server_port }, (err, address) => {
