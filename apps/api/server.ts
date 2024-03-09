@@ -5,10 +5,6 @@ import XmlBodyParser from '@api/plugins/xmlBodyParser';
 import router from '@api/routes';
 
 const server: FastifyInstance = fastify();
-//Welcome Test Route
-server.get('/welcome', async (request, reply) => {
-  reply.code(200).send({ success: true, message: "Welcome to Bacen Simulator!" });
-})
 
 server.register(XmlBodyParser(true));
 server.register(router, { prefix: 'api' });
