@@ -4,11 +4,6 @@
   "description": "BacenSimulator is a docker image to simulate Bacen, a official Brazilian payment infrastructure",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "ts-node -r tsconfig-paths/register ./apps/api/server.ts",
-    "dev": "ts-node-dev -r tsconfig-paths/register ./apps/api/server.ts",
-    "migration": "npm run migration:run && npm run migration:seed",
-    "migration:run": "ts-node -r tsconfig-paths/register ./package/infra/migrate.ts",
-    "migration:seed": "ts-node -r tsconfig-paths/register ./package/infra/seed_database.ts",
     "commit": "cz"
   },
   "config": {
@@ -24,15 +19,15 @@
     "commitizen": "^4.3.0",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.2",
-    "turbo": "^1.12.5"
+    "turbo": "^1.12.5",
+    "typescript": "^5.4.2"
   },
   "dependencies": {
-    "fast-xml-parser": "^4.3.5",
-    "fastify": "^4.26.2",
-    "fastify-plugin": "^4.5.1",
     "sqlite3": "^5.1.7",
-    "ts-node": "^10.9.2",
-    "zod": "^3.22.4"
-  }
+    "ts-node": "^10.9.2"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }
