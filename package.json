@@ -24,7 +24,8 @@
     "commitizen": "^4.3.0",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "turbo": "^1.12.5"
   },
   "dependencies": {
     "fast-xml-parser": "^4.3.5",

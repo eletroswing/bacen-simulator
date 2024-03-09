@@ -241,6 +241,9 @@ dist
 ### Workspace settings.json
 settings.json
 
+### Turbo Bundler Log Folder
+.turbo
+
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,docusaurus
 
 database.sqlite
