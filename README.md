@@ -19,7 +19,8 @@ To read all the api files, or see the flux in images, please, go to [docs.](DOC.
 - [Sqlite3](https://www.npmjs.com/package/sqlite3)
 - [Commitizen](https://github.com/commitizen/cz-cli)
 - [Typescript](https://www.typescriptlang.org/download)
-- [Zod for data validation](https://zod.dev/)
+- [Zod (Data Validation)](https://zod.dev/)
+- [TurboRepo](https://turbo.build/)
 
 # The communication itself
 All messages exchanged in the system follow the standards established in the documentation, therefore, XML (*extensible markup language*) will be used in the body of the messages.
