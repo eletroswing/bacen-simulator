@@ -1,0 +1,19 @@
+{
+    "name": "@repo/api",
+    "version": "0.0.1",
+    "description": "BacenSimulator api server, focused in create endpoints to interact with the database.",
+    "scripts": {
+      "start": "ts-node -r tsconfig-paths/register server.ts",
+      "dev": "ts-node-dev -r tsconfig-paths/register server.ts"
+    },
+    "repository": "https://github.com/eletroswing/bacen-simulator",
+    "author": "eletroswing",
+    "license": "MIT",
+    "dependencies": {
+      "fast-xml-parser": "^4.3.5",
+      "fastify": "^4.26.2",
+      "fastify-plugin": "^4.5.1",
+      "zod": "^3.22.4"
+    }
+  }
+  

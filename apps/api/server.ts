@@ -1,5 +1,5 @@
 import fastify, { FastifyInstance } from 'fastify'
-import logger from '@package/infra/logger';
+import logger from '@repo/infra/logger';
 
 import XmlBodyParser from '@api/plugins/xmlBodyParser';
 import router from '@api/routes';

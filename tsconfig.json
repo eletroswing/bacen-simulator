@@ -1,16 +1,22 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Default",
     "compilerOptions": {
         "target": "es2017",
         "module": "commonjs",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
+        "noEmit": true,
         "paths": {
             "@api/*": ["./apps/api/*"],
-            "@package/*": ["./package/*"],
+            "@repo/infra/*": ["./packages/infra/*"]
         }
     },
-    "include": ["apps/*", "apps/**/*"],
+    "exclude": ["node_modules"]
 }

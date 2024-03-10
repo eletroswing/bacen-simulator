@@ -1,0 +1,18 @@
+{
+    "name": "@repo/infra",
+    "version": "0.0.1",
+    "description": "BacenSimulator infrastructure responsible to manage databases (migrator and seeder).",
+    "scripts": {
+      "migration": "npm run migration:run && npm run migration:seed",
+      "migration:run": "ts-node -r tsconfig-paths/register ./packages/infra/migrate.ts",
+      "migration:seed": "ts-node -r tsconfig-paths/register ./packages/infra/seed_database.ts"
+    },
+    "repository": "https://github.com/eletroswing/bacen-simulator",
+    "author": "eletroswing",
+    "license": "MIT",
+    "exports": {
+        "./logger": "./logger.ts",
+        "./database": "./database.ts"
+    }
+  }
+  
