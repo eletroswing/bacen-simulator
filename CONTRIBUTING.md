@@ -35,6 +35,27 @@ To insert some testing values on db. To run both of them at the same time, run:
 npm run migration
 ```
 
+# Running the project
+We use turbo to manage all apps.
+To start the project, you can run on your terminal:
+```sh
+npm run start
+```
+Or, if you are developing, run:
+```sh
+npm run dev
+```
+
+# Tests
+We provide a bunch of tests E2E to our systems, aimming on the developer expierence. The developer can run all tests when needed(developing the repo, or not):
+```sh
+npm run test
+```
+Or:
+```sh
+npm run test:watch
+```
+
 # Making the commit
 To avoid straying too far from the commit structure, when you finish your changes, use the command to add (`git add`) followed by (remember to run the installation of dependencies):
 
