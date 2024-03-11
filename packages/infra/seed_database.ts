@@ -3,7 +3,7 @@ import logger from './logger';
 import crypto from 'node:crypto';
 
 function getRandomId(): string {
-    return crypto.randomBytes(32).toString();
+    return crypto.randomUUID();
 };
 
 const temp_institution_id: string = getRandomId();
