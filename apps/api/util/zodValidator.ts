@@ -26,7 +26,7 @@ function parse(schema: Schema): Function {
             {
               violation: {
                 reason: json_err[0].message.replace(/'/g, ``),
-                value: value,
+                value: value || "Missing value",
                 property: json_err[0].path.join('.'),
               }
             }
