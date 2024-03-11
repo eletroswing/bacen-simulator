@@ -4,7 +4,14 @@
   "description": "BacenSimulator is a docker image to simulate Bacen, a official Brazilian payment infrastructure",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "commit": "cz"
+    "commit": "cz",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "migration": "turbo run migration",
+    "migration:run": "turbo run migration:run",
+    "migration:seed": "turbo run migration:seed"
   },
   "config": {
     "commitizen": {
