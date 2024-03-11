@@ -1,0 +1,18 @@
+ARG NODE_VERSION=21.7
+FROM node:${NODE_VERSION}-alpine as alpine
+WORKDIR /usr/src/app
+
+COPY . .
+
+ENV NODE_ENV production
+
+USER node
+
+COPY package.json .
+COPY apps/api/package.json ./apps/api/package.json
+COPY packages/infra/package.json ./packages/infra/package.json
+
+RUN npm install
+
+EXPOSE 8080
+CMD npm start
