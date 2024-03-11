@@ -4,6 +4,12 @@
         "dev": {
             "cache": false
         },
+        "test": {
+            "cache": false
+        },
+        "test:watch": {
+            "cache": false
+        },
         "build": {
             "outputs": [".next/**", "!.next/cache/**"]
         },
