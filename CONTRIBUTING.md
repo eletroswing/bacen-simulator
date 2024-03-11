@@ -10,7 +10,7 @@ cd BacenSimulator
 git checkout -b your-branch-name
 ```
 
-# The dependecies
+# The dependencies
 There are two ways you can proceed, use:
 ```sh
 npm i
@@ -47,7 +47,7 @@ npm run dev
 ```
 
 # Tests
-We provide a bunch of tests E2E to our systems, aimming on the developer expierence. The developer can run all tests when needed(developing the repo, or not):
+We provide a bunch of tests E2E to our systems, aiming on the developer experience. The developer can run all tests when needed(developing the repo, or not):
 ```sh
 npm run test
 ```
