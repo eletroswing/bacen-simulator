@@ -1,30 +1,32 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "pipeline": {
-        "dev": {
-            "cache": false
-        },
-        "start": {
-            "cache": false
-        },
-        "test": {
-            "cache": false
-        },
-        "test:watch": {
-            "cache": false
-        },
-        "migration": {
-            "cache": false
-        },
-        "migration:run": {
-            "cache": false
-        },
-        "migration:seed": {
-            "cache": false
-        },
-        "build": {
-            "outputs": [".next/**", "!.next/cache/**"]
-        },
-        "type-check": {}
-    }
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "test:watch": {
+      "cache": false
+    },
+    "migration": {
+      "cache": false
+    },
+    "migration:run": {
+      "cache": false
+    },
+    "migration:seed": {
+      "cache": false
+    },
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "type-check": {},
+    "format": {},
+    "lint": {}
+  }
 }
