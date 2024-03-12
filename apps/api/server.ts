@@ -11,7 +11,7 @@ server.register(router, { prefix: 'api' });
 
 const server_port: number = Number(process.env.PORT) || 8080;
 
-server.listen({ port: server_port }, (err, address) => {
+server.listen({ host: '0.0.0.0' ,port: server_port }, (err, address) => {
   if (err) {
     logger.error(err);
     process.exit(1);
