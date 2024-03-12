@@ -1,0 +1,816 @@
+Lista de participantes ativos do Pix
+ ;Nome Reduzido;ISPB;Tipo de Institui��o;Autorizada pelo BCB;Tipo de Participa��o no SPI;Tipo de Participa��o no Pix;Modalidade de Participa��o no Pix;Status em produ��o;Inicia��o de Transa��o de Pagamento;Facilitador de servi�o de Saque e Troco (FSS)
+1;99PAY IP S.A.;24313102;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+2;A27 IP S/A;35534511;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;N�o;N/A
+3;ABASTECE AI IP LTDA.;09515813;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+4;ACCREDITO SCD S.A.;37715993;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+5;ACESSO SOLU��ES DE PAGAMENTO S.A. - INSTITUI��O DE PAGAMENTO;13140088;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+6;ACG IP S.A.;10868663;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+7;ADIQ;20520298;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+8;ADYEN DO BRASIL IP LTDA.;14796606;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+9;AL5 S.A. CFI;27214112;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+10;ALIPAY;32246162;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+11;AME DIGITAL BRASIL IP LTDA.;32778350;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+12;APE POUPEX;00655522;Associa��o de Poupan�a e Empr�stimo;Sim;Indireta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+13;AQBANK;00377239;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+14;ASAAS IP S.A.;19540550;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+15;ASTROPAY;34006497;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+16;BANCO BARI S.A.;00556603;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+17;BANCO BTG PACTUAL S.A.;30306294;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+18;BANCO DIGIO;27098060;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+19;BANCO GENIAL;45246410;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+20;BANCO INBURSA;04866275;Banco M�ltiplo;Sim;Direta;Facultativa;Liquidante Especial;Ativo em opera��o plena;N�o;N/A
+21;BANCO INTER;00416968;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+22;BANCO MASTER;33923798;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+23;BANCO ORIGINAL;92894922;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+24;BANCO PAN;59285411;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+25;BANCO RANDON S.A.;11476673;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+26;BANCO SEMEAR;00795423;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+27;BANCO SICOOB S.A.;02038232;Banco M�ltiplo Cooperativo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+28;BANCO TOP�ZIO S.A.;07679404;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+29;BANCO VOITER;61024352;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+30;BANQI;30723871;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+31;BANRISUL S.A. IP;92934215;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+32;BCO ABC BRASIL S.A.;28195667;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+33;BCO AFINZ S.A. - BM;04814563;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+34;BCO AGIBANK S.A.;10664513;Banco Comercial;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+35;BCO ALFA S.A.;03323840;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+36;BCO ARBI S.A.;54403563;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+37;BCO B3 S.A.;00997185;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+38;BCO BANESTES S.A.;28127603;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+39;BCO BMG S.A.;61186680;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+40;BCO BRADESCO S.A.;60746948;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+41;BCO BS2 S.A.;71027866;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+42;BCO BV S.A.;01858774;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+43;BCO C6 S.A.;31872495;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+44;BCO CITIBANK S.A.;33479023;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+45;BCO COOPERATIVO SICREDI S.A.;01181521;Banco M�ltiplo Cooperativo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+46;BCO CREFISA S.A.;61033106;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+47;BCO CSF S.A.;08357240;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+48;BCO DA AMAZONIA S.A.;04902979;Banco Comercial;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+49;BCO DAYCOVAL S.A;62232889;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+50;BCO DIGIMAIS S.A.;92874270;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+51;BCO DO BRASIL S.A.;00000000;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+52;BCO DO EST. DE SE S.A.;13009717;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+53;BCO DO EST. DO PA S.A.;04913711;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+54;BCO DO ESTADO DO RS S.A.;92702067;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+55;BCO DO NORDESTE DO BRASIL S.A.;07237373;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+56;BCO FIBRA S.A.;58616418;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+57;BCO GUANABARA S.A.;31880826;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+58;BCO HSBC S.A.;53518684;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+59;BCO INDUSTRIAL DO BRASIL S.A.;31895683;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+60;BCO ITAUCARD S.A.;17192451;Banco M�ltiplo;Sim;Indireta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+61;BCO J.P. MORGAN S.A.;33172537;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+62;BCO KEB HANA DO BRASIL S.A.;02318507;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+63;BCO LETSBANK S.A.;58497702;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+64;BCO LUSO BRASILEIRO S.A.;59118133;Banco M�ltiplo;Sim;Direta;Facultativa;Liquidante Especial;Ativo em opera��o plena;N�o;N/A
+65;BCO MERCANTIL DO BRASIL S.A.;17184037;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+66;BCO MODAL S.A.;30723886;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+67;BCO OURINVEST S.A.;78632767;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+68;BCO RENDIMENTO S.A.;68900810;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+69;BCO RIBEIRAO PRETO S.A.;00517645;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+70;BCO SAFRA S.A.;58160789;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+71;BCO SANTANDER (BRASIL) S.A.;90400888;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+72;BCO SENFF S.A.;11970623;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+73;BCO SOFISA S.A.;60889128;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+74;BCO TRIANGULO S.A.;17351180;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+75;BCO VOTORANTIM S.A.;59588111;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+76;BCO VR S.A.;78626983;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+77;BCO WESTERN UNION;13720915;Banco Comercial;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+78;BCO XP S.A.;33264668;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+79;BEES IP LTDA.;35523352;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+80;BEETELLER;32074986;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+81;BELVO IP;;Institui��o de Pagamento;Sim;;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+82;BEXS BCO DE CAMBIO S.A.;13059145;Banco de C�mbio;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+83;BIT CAPITAL;29079725;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+84;BK INSTITUICAO DE PAGAMENTO;16814330;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+85;BMP SCMEPP LTDA;11581339;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+86;BMS SCD S.A.;17826860;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+87;BOFA MERRILL LYNCH BM S.A.;62073200;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+88;BONUSPAGO SCD S.A.;36586946;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+89;BRASIL CARD IP LTDA;03130170;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+90;BRB - BCO DE BRASILIA S.A.;00000208;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+91;BRINKS PAY IP LTDA.;09437293;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+92;C.C CREDIVERDE;25528753;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+93;C.C. DO CENTRO DO ESTADO DE ROND�NIA;08044854;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+94;C6 CTVM LTDA.;32345784;Sociedade Corretora de TVM;Sim;Indireta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+95;CAIXA ECONOMICA FEDERAL;00360305;Caixa Econ�mica Federal;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+96;CAPITAL CONSIG SCD S.A.;40083667;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+97;CARDPAY;35542555;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+98;CARTOS SCD S.A.;21332862;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+99;CARUANA SCFI;09313766;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+100;CASA CREDITO S.A. SCM;05442029;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+101;CC AGROCREDI LTDA;42873828;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+102;CC ALTO PARANAIBA E REGI�O;25387671;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+103;CC ALTO VALE DO ITAJA�;80959612;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+104;CC ARACREDI LTDA.;00068987;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+105;CC CAP UNICIDADES;03047549;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+106;CC CARLOS CHAGAS;41753500;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+107;CC CECRES;54603022;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+108;CC CENTRO LESTE NORTE MARANHENSE - SICOOB CENTROLESTE;09403026;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+109;CC CENTRO SUL MINEIRO;71238232;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+110;CC CLASSICA FUNC PREST SERV LIG GRUPO EUCATUR;21110927;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+111;CC COCRE;54401286;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+112;CC CONTADORES, ADMINISTRADORES, ECONOMISTAS E CORRET SEGUROS;02217068;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+113;CC COOPACREDI;65229254;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+114;CC COOPCRED;53623781;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+115;CC COOPLIVRE;49389307;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+116;CC COPERSUL LTDA;18966739;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+117;CC CREDCOOPER LTDA;19449602;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+118;CC CREDIAGRO;00429890;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+119;CC CREDIALP;25353939;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+120;CC CREDIARA LTDA.;66398496;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+121;CC CREDIBAM LTDA.;66259110;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+122;CC CREDIBELO LTDA. - SICOOB CREDIBELO;71237184;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+123;CC CREDIBOM;21670187;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+124;CC CREDICAF LTDA;25395435;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+125;CC CREDICAMPINA;01609345;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+126;CC CREDICAMPO LTDA;21661202;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+127;CC CREDICARPA;23949522;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+128;CC CREDICERIPA;00966246;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+129;CC CREDICITRUS;54037916;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+130;CC CREDICOCAPEC;67096909;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+131;CC CREDICOPE;38588174;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+132;CC CREDIESMERALDAS LTDA.;68512748;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+133;CC CREDIFIEMG;07469260;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+134;CC CREDIFOR LTDA;41931445;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+135;CC CREDIGUA�U;67960229;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+136;CC CREDILIVRE LTDA. - SICOOB CREDILIVRE;41697103;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+137;CC CREDIMATA;01152097;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+138;CC CREDIMOTA;66788142;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+139;CC CREDINACIONAL LTDA - SICOOB CREDINACIONAL;25420696;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+140;CC CREDINOR;21866694;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+141;CC CREDINORTE - SICOOB CREDINORTE;64276058;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+142;CC CREDINOSSO;06324872;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+143;CC CREDINTER;24048910;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+144;CC CREDIPIMENTA;42934794;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+145;CC CREDIRAMA;03412878;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+146;CC CREDISETE LTDA;22753982;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+147;CC CREDISG;03645752;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+148;CC CREDISUDESTE LTDA;22656789;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+149;CC CREDIUNA LTDA;64237530;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+150;CC CREDIVALE LTDA. - SICOOB CREDIVALE;25387655;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+151;CC CREDIVAR;25798596;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+152;CC CREDIVAZ LTDA;00803287;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+153;CC CREDIVERTENTES;22724710;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+154;CC CREDLIDER;05463934;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+155;CC CREDPLUS;25536764;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+156;CC DA FOZ DO RIO ITAJA� A�U;09512539;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+157;CC DA SERRA CATARINENSE;09590601;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+158;CC DE EMPRES�RIOS;04247370;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+159;CC DE ITAPETININGA - SICOOB CRED-ACI;08844074;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+160;CC DISTRITO FEDERAL E ENTORNO;01187961;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+161;CC DO NORTE CATARINENSE;03461243;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+162;CC DO NORTE CATARINENSE E SUL PARANAENSE;81011686;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+163;CC DO PLANALTO SUL;03033469;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+164;CC DO RIO GRANDE DO NORTE - SICOOB RIO GRANDE DO NORTE;04138455;Cooperativa de Cr�dito;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+165;CC DO VALE EUROPEU - SICOOB EURO VALE;82133182;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+166;CC DOS SERVIDORES, EMPRESARIOS, AUTONOMOS E LIBERAIS;03102185;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+167;CC EMP DA CIA INDUSTRIAL CATAGUASES E BAUMINAS LTDA.;19495266;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+168;CC EMPRES�RIOS DE MANAUS;10808037;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+169;CC GUARANICREDI;26014175;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+170;CC INTEGRADO - SICOOB INTEGRADO;07122321;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+171;CC INTEGRANTES MIN PUBL E PODER JUDIC AP E CE E CCLA PA;84156470;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+172;CC INV DE ROND�NIA - SICOOB CREDJURD;04751713;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+173;CC INVESTIMENTO LIVRE ADMISS�O DO OESTE DE ROND�NIA;05597773;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+174;CC JUST GOIAS E CELG;09552111;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+175;CC LAR CREDI;39343350;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+176;CC LITOR�NEA;85291086;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+177;CC MERCADO IMOBILI�RIO - SICOOB IMOB.VC;14913919;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+178;CC MONTECREDI LTDA.;71392047;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+179;CC NO PIAU� - SICOOB PIAU�;05477038;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+180;CC NOROESTE DE MINAS;86564051;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+181;CC NORTE E NOROESTE DE MINAS GERAIS;00698609;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+182;CC NOSSA SENHORA DO DESTERRO;03419786;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+183;CC NOSSO - SICOOB NOSSO;59869560;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+184;CC NOSSOCREDITO;22760839;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+185;CC ORIGINAL - SICOOB ORIGINAL;81292278;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+186;CC PODER JUD E MP MG;03519240;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+187;CC PROF SA�DE E LA DO SUL DE MINAS LTDA.;71418784;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+188;CC REG. COLAR METROPOLITANO VALE DO A�O LTDA;17361536;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+189;CC REGI�O CENTRAL MG;22749014;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+190;CC REGI�O MERIDIONAL BRASIL;05392810;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+191;CC SACRAMENTO;71154256;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+192;CC S�O FRANCISCO DE SALES LTDA.;01374196;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+193;CC SERV MIL POL CIVIL SEC ED;03269540;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+194;CC SERV. MUN SANTO ANDR� SP - CECRESA;00512839;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+195;CC SICOOB 3 COLINAS;04013172;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+196;CC SICOOB ALIAN�A;06174009;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+197;CC SICOOB CENTRAL BA;34148882;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+198;CC SICOOB COOPEC LTDA.;32615247;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+199;CC SICOOB COOPEMAR;04174720;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+200;CC SICOOB COOPMIL;62673470;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+201;CC SICOOB CRED EXECUTIVO;04321309;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+202;CC SICOOB CREDCOOP;02528151;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+203;CC SICOOB CREDICAPITAL;04529074;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+204;CC SICOOB CREDICONQUISTA;02282165;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+205;CC SICOOB CREDITIROS;42880617;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+206;CC SICOOB CREDMETAL;03535065;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+207;CC SICOOB CREDSEGURO LTDA.;02935307;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+208;CC SICOOB ENGECRED;04388688;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+209;CC SICOOB EXTREMO SUL LTDA.;02447120;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+210;CC SICOOB HORIZONTE;07194313;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+211;CC SICOOB IP�;24610065;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+212;CC SICOOB ITAPAGIPE;71506513;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+213;CC SICOOB METROPOLITANO;03459850;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+214;CC SICOOB NORTE SUL;02876918;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+215;CC SICOOB OURO VERDE;05582619;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+216;CC SICOOB SERT�O;02057584;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+217;CC SICOOB UNISP;74220948;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+218;CC SICOOB VALE SUL;02466552;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+219;CC SICOOBMAIS;26359745;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+220;CC SICREDI COOMAMP;05545390;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+221;CC UNI�O CENTRO OESTE LTDA;26178111;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+222;CC UNI�O DO CENTRO OESTE DE MINAS;65239402;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+223;CC UNICRED CENTRO-SUL LTDA - UNICRED CENTRO-SUL;00075847;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+224;CC UNICRED COOMARCA;04355489;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+225;CC UNICRED DESBRAVADORA LTDA - UNICRED DESBRAVADORA;01039011;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+226;CC UNICRED EVOLU��O LTDA.;01727929;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+227;CC UNICRED UNI�O LTDA - UNICRED UNI�O;74114042;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+228;CC UNICRED VALOR CAPITAL LTDA - UNICRED VALOR CAPITAL;74064502;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+229;CC VALE DO CANOAS;00707903;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+230;CC VALE ITAJA� E ITAPOC�;02883398;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+231;CCC DO ESP.SANTO - SICOOB ES;32428294;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+232;CCC DO ESTADO DE S�O PAULO;63917579;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+233;CCC DO NORTE DO BRASIL;03502131;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+234;CCC DOS EST DE MT, MS E MUN DE CACOAL/RO;00106180;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+235;CCC ESTADO MG - CECREMGE;00309024;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+236;CCC ESTADO SP - CECRESP;62931522;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+237;CCC MINAS GERAIS - CREDIMINAS;25683434;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+238;CCC SICOOB CENTRAL SC/RS;80160260;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+239;CCC UNICOOB-SICOOB CENTR UNIC;05036532;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+240;CCLA ALTO S�O FRANCISCO;41805003;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+241;CCLA AN�POLIS E REGI�O;33615055;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+242;CCLA ARCOS;71230338;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+243;CCLA BOA ESPERAN�A;00869687;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+244;CCLA CAMPOS GERAIS E CAMPO DO;71146450;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+245;CCLA CARMO DO RIO CLARO;25743311;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+246;CCLA CENTRO BRASILEIRA LTDA.;37395399;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+247;CCLA CENTRO NORDESTE MINEIRO;02173447;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+248;CCLA CENTRO NORTE MT/MS;03326437;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+249;CCLA CENTRO OESTE LTDA.;07502031;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+250;CCLA CENTRO-SUL GOIANO;33579731;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+251;CCLA CERES E RIALMA LTDA;09576849;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+252;CCLA CIRCUITO CAMPOS VERTENTES;02232383;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+253;CCLA CIRCUITO DAS �GUAS;03941182;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+254;CCLA CREDIEMBRAPA;02338666;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+255;CCLA CREDISIS JICRED;02309070;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+256;CCLA CREDSAOPAULO;02197569;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+257;CCLA DA GRANDE GOI�NIA LTDA.;10209619;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+258;CCLA DA PARA�BA - SICOOB PARA�BA;11907520;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+259;CCLA DA REGI�O CENTRAL DE ROND�NIA;02144899;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+260;CCLA DA REGI�O DE  PAR� DE MINAS;25387713;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+261;CCLA DA REGI�O DE FRUTAL;71419600;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+262;CCLA DA REGI�O METROPOLITANA DE GOI�NIA LTDA.;07599206;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+263;CCLA DE ARARAQUARA E REGI�O;53236808;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+264;CCLA DE ASSOCIADOS UNIROND�NIA LTDA;01664968;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+265;CCLA DE BH E CIDADES POLO DE MG;01760242;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+266;CCLA DE DORES DO INDAIA;02254376;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+267;CCLA DE ITAJUB� - SICOOB SUDESTE MAIS;04079285;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+268;CCLA DE ITA�NA E REGI�O LTDA;66463407;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+269;CCLA DE PALMEIRAS E REGI�O;37631058;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+270;CCLA DE PERNAMBUCO - SICOOB PERNAMBUCO;03732359;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+271;CCLA DE PITANGUI E REGIAO LTDA;04181542;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+272;CCLA DE POMPEU LTDA.;66262643;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+273;CCLA DE RIO VERDE E REGI�O;09033698;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+274;CCLA DE RORAIMA LTDA.;02137018;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+275;CCLA DE S�O ROQUE DE MINAS LTDA.;66402207;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+276;CCLA DO CENTRO SUL DE MS;10319386;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+277;CCLA DO CENTRO SUL RONDONIENSE;02015588;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+278;CCLA DO ESTADO DE S�O PAULO - SICOOB PAULISTA;10262276;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+279;CCLA DO ESTADO DO PAR� - SICOOB COOESA;83836114;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+280;CCLA DO OESTE MARANHENSE - SICOOB OESTE MARANHENSE;09424988;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+281;CCLA DO PLANALTO CATARINENSE;01389651;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+282;CCLA DO PLANALTO SERRANO;01692448;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+283;CCLA DO SUL CATARINENSE;03427097;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+284;CCLA DO TOCANTINS;26960328;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+285;CCLA DO VALE;86829827;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+286;CCLA DO VALE DO CANOINHAS;78834975;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+287;CCLA E DOS ADV;02480577;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+288;CCLA EMPREG DOS CORREIOS - SICOOB COOPERCORREIOS;03862898;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+289;CCLA ITAPIRANGA;78483310;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+290;CCLA JATA� E REGI�O;10143499;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+291;CCLA LAGOA DA PRATA;01739375;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+292;CCLA LESTE E NORDESTE MINEIRO;01559914;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+293;CCLA MARGEM ESQUERDA DO URUCUI;14046512;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+294;CCLA MARTINHO CAMPOS;64480833;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+295;CCLA MAXI ALFA;78825270;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+296;CCLA MEIO OESTE CATARINENSE;80959638;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+297;CCLA MONTES CLAROS;02031139;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+298;CCLA NOROESTE DE MG CREDIPINHO;71154876;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+299;CCLA NORTE DE MATO GROSSO - SICOOB NORTE MT;23623636;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+300;CCLA NOVA SERRANA E REGI�O CO;01667766;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+301;CCLA OESTE MINEIRO LTDA-SICOOB;71297899;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+302;CCLA PARA DE MINAS;01009908;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+303;CCLA PEDRO LEOPOLDO;71441406;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+304;CCLA PONTAL DO TRIANGULO;26178533;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+305;CCLA PROD RURAIS TRI�NGULO;41669227;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+306;CCLA PROF SA�DE UNICRED ALIAN�A;70937271;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+307;CCLA REG LESTE BACIA RIO DOCE;05158093;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+308;CCLA REG SUDESTE MG;42887133;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+309;CCLA REG. CTR. E OESTE MINEIRO;01736516;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+310;CCLA REGI�O DO CAPARA�;71261184;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+311;CCLA REGI�O GUAXUP�;01699652;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+312;CCLA RUBIATABA REGIAO;73422792;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+313;CCLA SANTA CRUZ PALMEIRAS;06910457;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+314;CCLA SANTO ANTONIO DO MONTE;41707258;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+315;CCLA SEBASTIAO PARAISO;01657678;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+316;CCLA SERT�O MINAS;01667352;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+317;CCLA SERV POD LEG MG - SICOOB COFAL;21797311;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+318;CCLA SICOOB ARENITO PARAN� / S�O PAULO;07026923;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+319;CCLA SICOOB COOCRELIVRE;53935029;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+320;CCLA SICOOB COOPJUS;25363615;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+321;CCLA SICOOB COPESITA;19875244;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+322;CCLA SICOOB CREDIACIL;08795285;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+323;CCLA SICOOB CREDICARU SC/RS;00694389;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+324;CCLA SICOOB CREDIJUSTRA;37079720;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+325;CCLA SICOOB CREDIMEPI;01644264;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+326;CCLA SICOOB UNI�O SUDESTE;07946216;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+327;CCLA SICOOB UNIMAIS METROPOLITANA;00259231;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+328;CCLA SICOOB VALCREDI SUL;02090126;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+329;CCLA SUDOESTE GOIANO;24795049;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+330;CCLA SUL CATARINENSE;81367880;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+331;CCLA SUL MARANHENSE - SICOOB SUL MARANHENSE;26526166;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+332;CCLA SUL MINAS-SICOOB CREDIVAS;01604998;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+333;CCLA TRANSPORT RODOV VEICULOS;07789195;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+334;CCLA TR�S FRONTEIRAS;04876393;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+335;CCLA UNI�O CENTRO OESTE MINAS;01703620;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+336;CCLA UNI�O DOS VALES DO PIRANGA E MATIP� LTDA.;01060307;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+337;CCLA UNI�O E NEG�CIOS  - SICOOB INTEGRA��O;08742188;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+338;CCLA UNICRED DO ESTADO DE S�O PAULO;71884498;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+339;CCLA URUBICI;02587492;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+340;CCLA VALE DO A�O;19869338;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+341;CCLA VALE DO ARAGUAIA;24830879;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+342;CCLA VALE DO GORUTUBA;25404542;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+343;CCLA VALE DO PARANA�BA;24799033;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+344;CCLA VALE DO PARANAPANEMA;01637949;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+345;CCLA VALE DO RIO DO PEIXE;78865995;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+346;CCLA VALE DO RIO GRANDE;25683475;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+347;CCLA VALE DO VINHO;81016131;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+348;CCLA VALE S�O PATRICIO LTDA;00968602;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+349;CCLA ZONA DA MATA LTDA;02335109;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+350;CCLAA AURIVERDE-SICOOB CREDIAL;78858107;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+351;CCLAA ITAIPU SICOOB CREDITAIPU;81014060;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+352;CCLAA JARAGU� DO SUL E REGI�O;12384953;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+353;CCLAA NOVA TRENTO;02641969;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+354;CCLAA OESTE CATARINENSE;78825023;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+355;CCLAA SAO MIGUEL DO OESTE;81607046;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+356;CCM CORRET SEG EST SAO PAULO;08030602;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+357;CCM DESP TR�NS SC E RS;04715685;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+358;CCM DO ABC - COOPER 7;04414354;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+359;CCM DO CEAR� - SICOOB CEAR�;03620772;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+360;CCM DOS ADVOGADOS DE SC;05861932;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+361;CCM EMPR MAGAZINE LUIZA;02093154;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+362;CCM MED EMP MT;36900256;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+363;CCM PROF SAUDE E LIVRE ADMISS�O TEOFILO OTONI LTDA;01709266;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+364;CCM SERV FEDERAIS NA PARA�BA - SICOOB COOPERCRET;02275781;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+365;CCM SERV MIN EDUC S�O PAULO;73092827;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+366;CCM SERV PUBL MUN S�O BERNARDO;03612679;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+367;CCM SICOOB CREDIACISC;07669921;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+368;CCMLA REGI�O ADMINISTRATIVA DE SOROCABA;10175348;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+369;CCMS MUNICIPAIS DE BEBEDOURO;05969937;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+370;CCPS E LA DO TRIANG MINEIRO E SUL DE MG LTDA;71432926;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+371;CCR COOPAVEL;76461557;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+372;CCR CREDICANA;44373041;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+373;CCR DE ABELARDO LUZ;01073966;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+374;CCR DE IBIAM;08240446;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;Sim;Sim
+375;CCR DE S�O MIGUEL DO OESTE;08253539;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+376;CCR IRAI - SICOOB CREDIMIL;71207740;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+377;CCR SEARA;00204963;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+378;CDC SCD S.A.;18394228;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+379;CECM APOS PENS E IDOSOS - SICOOB COOPERNAPI;16564240;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+380;CECM COLABORADORES DA VALE SICOOB CREDIVALE;20961629;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+381;CECM COOPERSERV;05667301;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+382;CECM DOS EMPR DAS EMP RANDON;89280960;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+383;CECM DOS FUNCIONARIOS DA COMIGO;01062439;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+384;CECM DOS M�DICOS DOS V TAQUARI E RIO PARDO E REG PRO;01635462;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+385;CECM DOS PROFISSIONAIS DA SAUDE DA REG ALTA MOGIANA;69346856;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+386;CECM EMP AMERICANA, LIMEIRA E;09579249;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+387;CECM EMP USAGRO;68969625;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+388;CECM EMPR CEMIG IND METAL E SERV PUB MUN;17502881;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+389;CECM EMPR CENT EL�TRICAS/SC;08850613;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+390;CECM EMPR EMP ZILLO LORENZETTI;58022195;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+391;CECM EMPR EST HOSP BH RM ZM;19402130;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+392;CECM INTEG. MF DP ESTADO RJ;04694278;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+393;CECM MAGISTRADOS DE S�O PAULO;51489318;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+394;CECM M�D DE PORTO ALEGRE;94433109;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+395;CECM M�D OURINHOS;02179673;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+396;CECM MEDICOS E PROFISSIONAIS AREA SAUDE DO BRASIL;42898825;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+397;CECM M�DICOS PLANALTO M�DIO RS - CREDISIS/CREDIPLAN;97259253;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+398;CECM MILITARES ESTADUAIS DE SC;04572960;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+399;CECM PROF �REA NOTARIAL REGISTRAL;07714057;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+400;CECM REGIONAL NORTE LAGOS LTDA;04445917;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+401;CECM SERV E EMPREG PUBL MUN BH BETIM BRUMAD CONTAG IBI NL RN;01864151;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+402;CECM SERV MUN ITABIRA;16651002;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+403;CECM SERV MUN PO�OS DE CALDAS;41791005;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+404;CECM SERV MUN REG METR VALE PARAIBA E LITORAL NORTE;54190525;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+405;CECM SERV POD JUD TCE ORG PUBL MUN EST FED RJ;02000895;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+406;CECM SERV POL MIL SP REGI�O CE;04152107;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+407;CECM SERV UNIV FED VI�OSA;02794761;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+408;CECM SICOOB COOPERAC;08071414;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+409;CECM SICOOB CRED-ACILPA;09004796;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+410;CECM SICOOB CREDSA�DE;02072790;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+411;CECM SICOOB METALCRED;04833655;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+412;CECM TRAB CIA PROC DADOS SP;67915868;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+413;CECM UNICRED INTEGRA��O;73750424;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+414;CECME EMPR EMP GR ECON RHODIA;57563728;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+415;CECMF SECRETARIA DA FAZENDA MG E LIVRE ADMISS�O;16721078;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+416;CECMM CATEG AFINS-UNICRED M�LTIPLO VALOR;01090027;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+417;CELCOIN IP S.A.;13935893;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+418;CENTRAL SICOOB UNI DE CC;04243780;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+419;CF BANK;38406148;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+420;CICLLOS PAY;35257964;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+421;CIELO IP S.A.;01027058;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+422;CIVIA COOP CRED;10218474;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+423;CLARO PAY;34878543;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+424;CLOUDWALK IP LTDA;18189547;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+425;COBUCCIO S.A. SCFI;36947229;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Liquidante Especial;Ativo em opera��o plena;N�o;N/A
+426;CODEPAY;26721922;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;N�o;N/A
+427;CONF NAC COOP CENTRAIS UNICRED;00315557;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+428;CONPAY;31531997;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+429;COOP  SICOOB M�DIO OESTE;07318874;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+430;COOP ARACOOP LTDA. - SICOOB ARACOOP;03320525;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+431;COOP CENTRO NORTE BRASILEIRO;02282709;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+432;COOP CREDICAPI LTDA - SICOOB CREDICAPI;00804046;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+433;COOP CREDITAG;05491616;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+434;COOP CRESOL ALIAN�A;07412987;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+435;COOP CRESOL ALTERNATIVA;07215632;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+436;COOP CRESOL ALTO VALE;07465539;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+437;COOP CRESOL AMAZONIA;10520232;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+438;COOP CRESOL ARATIBA;04565791;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+439;COOP CRESOL �UREA;02904138;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+440;COOP CRESOL CENTRO NORTE;05211129;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+441;COOP CRESOL CENTRO SERRA;01155801;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+442;COOP CRESOL CENTRO SUL RS/MS;02910987;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+443;COOP CRESOL CONEX�O;11969853;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+444;COOP CRESOL CONFIAN�A;07252614;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+445;COOP CRESOL COOPERAR;05983995;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+446;COOP CRESOL DESENVOLVIMENTO;05425526;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+447;COOP CRESOL ENCOSTAS DA SERRA GERAL;03485130;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+448;COOP CRESOL ESSENCIA;06031727;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+449;COOP CRESOL EVOLU�AO;02844024;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+450;COOP CRESOL FRONTEIRAS PR/SC/SP/ES;05276770;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+451;COOP CRESOL GETULIO VARGAS;05241145;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+452;COOP CRESOL GOIAS;04490531;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+453;COOP CRESOL GRANDES LAGOS PR/SP;06126780;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+454;COOP CRESOL HORIZONTE;05277312;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+455;COOP CRESOL INOVA�AO;05070112;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+456;COOP CRESOL INTEGRACAO;07268499;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+457;COOP CRESOL INTERA��O;08055016;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+458;COOP CRESOL JACINTO MACHADO;09463721;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+459;COOP CRESOL JACUTINGA;02904125;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+460;COOP CRESOL LIDERANCA;02934201;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+461;COOP CRESOL LITORAL;05410056;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+462;COOP CRESOL MAIS;05269976;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+463;COOP CRESOL MATO GROSSO;50735161;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+464;COOP CRESOL MEIO OESTE;07946451;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+465;COOP CRESOL MINAS GERAIS;08624548;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+466;COOP CRESOL MISS�ES FRONTEIRA RS;08488377;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+467;COOP CRESOL NASCENTE;05494591;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+468;COOP CRESOL NORDESTE;02025743;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+469;COOP CRESOL NOROESTE;02663426;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+470;COOP CRESOL NORTE PARANAENSE;07925729;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+471;COOP CRESOL ORIGENS;05220243;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+472;COOP CRESOL PIONEIRA;00971300;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+473;COOP CRESOL PLANALTO SERRA;05863726;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+474;COOP CRESOL PLANALTO SUL;02766672;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+475;COOP CRESOL PROGRESSO;02448310;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+476;COOP CRESOL RAIZ;17343510;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+477;COOP CRESOL RIO GRANDE DO SUL;06139650;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+478;COOP CRESOL SAO JOAO DO SUL;09488496;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+479;COOP CRESOL S�O VALENTIM;03015152;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+480;COOP CRESOL SERRA MAR;07958405;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+481;COOP CRESOL TRADICAO;04350225;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+482;COOP CRESOL TRANSAMAZ�NICA;24431221;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+483;COOP CRESOL TRANSFORMA��O;04261151;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+484;COOP CRESOL TREZE DE MAIO;09330158;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+485;COOP CRESOL TRIUNFO;08560508;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+486;COOP CRESOL UNIAO;02446089;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+487;COOP CRESOL UNIAO DOS VALES;05231945;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+488;COOP CRESOL VALE;07320890;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+489;COOP CRESOL VALE EUROPEU;07512780;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+490;COOP CRESOL VANGUARDA;03965737;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+491;COOP CRESOL XANXERE;07509426;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+492;COOP DE CRED E INVEST LIBERDADE - SICREDI LIBERDADE;88530142;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+493;COOP DE CR�DITO SICOOB COSTA DO DESCOBRIMENTO LTDA.;01205736;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+494;COOP DE PRIMAVERA DO LESTE;26563270;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+495;COOP DO ESTADO DE GOI�S;04406371;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+496;COOP DO ESTADO DO ACRE LTDA.;01608685;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+497;COOP EVOLUA;10311218;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+498;COOP FRONTEIRAS;03612764;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+499;COOP INVEST INT SOL VALE DAS �GUAS PR/MG;04663561;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+500;COOP LIVRE ADMISS�O DE ASSOCIADOS SICOOB CRUZ ALTA LTDA;73326449;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+501;COOP NOVOS CAMPOS;78862083;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+502;COOP PARQ ARAUCARIAS PR/SC/SP;82065285;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+503;COOP POL FED - SICREDI POL;03000142;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+504;COOP SICOOB BURITIS;05247312;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+505;COOP SICOOB CERRADO;05222094;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+506;COOP SICOOB CONFIAN�A;07097064;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+507;COOP SICOOB COOPEREMB;46642294;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+508;COOP SICOOB COOPERPLAN CREDSEF;03603683;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+509;COOP SICOOB CREDIAUC;78840071;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+510;COOP SICOOB EXECUTIVO LTDA.;00694877;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+511;COOP SICOOB MANTIQUEIRA;71698674;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+512;COOP SICOOB PRIMAVERA;05241619;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+513;COOP SICOOB UNI SUDESTE;86389236;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+514;COOP SICOOB UNI SUL MS;37554441;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+515;COOP SICREDI AGROEMPRESARIAL;79457883;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+516;COOP SICREDI AJURIS;03750034;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+517;COOP SICREDI ALIAN�A;79052122;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+518;COOP SICREDI ALIAN�A RS/SC;87795639;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+519;COOP SICREDI ALT SERRA RS/SC;92555150;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+520;COOP SICREDI ALTA NOROESTE SP;04484490;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+521;COOP SICREDI ALTSERT�O PARAIBANO;09343038;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+522;COOP SICREDI ARACAJU;02923389;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+523;COOP SICREDI ARAXING�;33021064;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+524;COOP SICREDI BANDEIRANTES;04853988;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+525;COOP SICREDI BIOMAS;33022690;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+526;COOP SICREDI BOTUCARA� RS/MG;87900601;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+527;COOP SICREDI CAMINHO DAS �GUAS RS;95213211;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+528;COOP SICREDI CAMPO GRANDE;03042597;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+529;COOP SICREDI CELEIRO DO MT;26555235;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+530;COOP SICREDI CELEIRO OESTE;03566655;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+531;COOP SICREDI CEN OEST PAULISTA;04463602;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+532;COOP SICREDI CENT PERNAMBUCANA;41255225;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+533;COOP SICREDI CENT SUL PR/SC/RJ;78907607;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+534;COOP SICREDI CENTRO SERRA;87067757;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+535;COOP SICREDI CENTRO-SUL MS/BA;26408161;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+536;COOP SICREDI CERRADO GO;06332931;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+537;COOP SICREDI COOABCRED RS;19962468;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+538;COOP SICREDI COOPERJURIS;08041950;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+539;COOP SICREDI COOPERUCS;04525997;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+540;COOP SICREDI CREDENOREG;06078926;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+541;COOP SICREDI CREDIGRANDE;25626490;Cooperativa de Cr�dito;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+542;COOP SICREDI CREDJURIS;04886317;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+543;COOP SICREDI CULTURAS RS/MG;90729369;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+544;COOP SICREDI DEXIS;79342069;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+545;COOP SICREDI EMPREENDEDORES;07070495;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+546;COOP SICREDI ESPUMOSO RS/MG;87900411;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+547;COOP SICREDI ESS�NCIA;87733077;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+548;COOP SICREDI EVOLU��O;35571249;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+549;COOP SICREDI EXPANS�O;41180092;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+550;COOP SICREDI FOR�A DOS VENTOS;57647653;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+551;COOP SICREDI FRONTEIR PR/SC/SP;82527557;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+552;COOP SICREDI GERA��ES RS/MG;88471024;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+553;COOP SICREDI GRANDES LAGOS;81115149;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+554;COOP SICREDI GRANDES RIOS;37442605;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+555;COOP SICREDI IBIRAIARAS RS/MG;89990501;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+556;COOP SICREDI IGUA�U PR/SC/SP;84974278;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+557;COOP SICREDI INTEGRA��O BAHIA;97489280;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+558;COOP SICREDI INTEGRA��O MT/AP/PA;26549311;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+559;COOP SICREDI INTEGRA��O PR/SC;81054686;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+560;COOP SICREDI INTEGRA��O RS/MG;91159764;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+561;COOP SICREDI INTERESTADOS RS/ES;90497256;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+562;COOP SICREDI MEDICRED;02924977;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+563;COOP SICREDI MIL;03212823;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+564;COOP SICREDI MORADA DO SOL SP;73113243;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+565;COOP SICREDI MP;03662047;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+566;COOP SICREDI NOROESTE SP;03065046;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+567;COOP SICREDI NORTE;83315408;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+568;COOP SICREDI NORTE SC;02843443;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+569;COOP SICREDI NORTE SUL;79063574;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+570;COOP SICREDI NOSSA TERRA PR/SP;81192106;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+571;COOP SICREDI NOVOS HORIZONTES PR/SP/RJ;07206072;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+572;COOP SICREDI ORIGENS RS;92796564;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+573;COOP SICREDI OURO BRANCO RS/MG;87853206;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+574;COOP SICREDI OURO VERDE MT;26529420;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+575;COOP SICREDI PANTANAL;26408187;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+576;COOP SICREDI PARANAPANEMA SERRANA PR/SP/RJ;79086997;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+577;COOP SICREDI PIONEIRA RS;91586982;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+578;COOP SICREDI PLAN CENTRAL;10736214;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+579;COOP SICREDI PLANALT DAS �GUAS;77984870;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+580;COOP SICREDI PLANALTO RS/MG;88038260;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+581;COOP SICREDI PROGRESSO PR/SP;76059997;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+582;COOP SICREDI RAIZES RS/SC/MG;88099247;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+583;COOP SICREDI REG CENTRO RS/MG;95594941;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+584;COOP SICREDI REG PROD RS/SC/MG;89468565;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+585;COOP SICREDI REGI�O DOS VALES;89126130;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+586;COOP SICREDI RIO GRANDE DO NORTE;70038237;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+587;COOP SICREDI RIO PARAN�;81206039;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+588;COOP SICREDI RIO RJ;72128440;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+589;COOP SICREDI ROTA DAS TERRAS RS/MG;87510475;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+590;COOP SICREDI S�O LU�S;08143326;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+591;COOP SICREDI SERRANA RS;90608712;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+592;COOP SICREDI SUDOESTE MT/PA;32995755;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+593;COOP SICREDI SUL DO MARANH�O;26191078;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+594;COOP SICREDI SUL MINAS RS/MG;87784088;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+595;COOP SICREDI SUL SC;03793242;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+596;COOP SICREDI UNI�O MS/TO;24654881;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+597;COOP SICREDI UNI�O RS;88894548;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+598;COOP SICREDI UNIESTADOS;87780268;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+599;COOP SICREDI UNIVALES MT/RO;70431630;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+600;COOP SICREDI VALE DO PIQUIRI;81099491;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+601;COOP SICREDI VALE DO RIO PARDO;95424891;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+602;COOP SICREDI VALE LITORAL SC;10348181;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+603;COOP SICREDI VALE S�O FRANCISCO;04237413;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+604;COOP SICREDI VANGUARDA PR/SP/RJ;78414067;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+605;COOP SICREDI VL DO CERRADO;32983165;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+606;COOP SICREDI VL JAGUA ZN MATA;87780284;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+607;COOP SICREDI VLR SUSTENT PR/SP;81706616;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+608;COOP SUL;05888589;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+609;COOP TRANSPOCRED;08075352;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+610;COOP UNICRED VALE LTDA.;73443863;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+611;COOP �NILOS;02405189;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+612;COOP UNIPRIME SUL LTDA.;01572667;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+613;COOP UNIQUE BR LTDA.;73647935;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+614;COOP V. ALTO VALE;16779741;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+615;COOP VIACREDI;82639451;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+616;COOP. CRED. POUP. INVEST. CONEX�O;87733770;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+617;COOPCENTRAL AILOS;05463212;Cooperativa de Cr�dito;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+618;COOPCENTRAL DE ECON. E CR�DITO SICOOB UNIMAIS RIO LTDA.;14568725;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+619;COOPCENTRAL SICOOB NOVA CENTRAL LTDA.;33416108;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+620;COOPECREDI GUARIBA - CC;44469161;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+621;COOPER CARD IP;05938780;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+622;COOPERATIVA DE CR�DITO COOPERA��O - SICREDI COOPERA��O;87779625;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+623;COOPERATIVA DE CR�DITO CREDIJEQUITINHONHA LTDA.;71243034;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+624;COOPERATIVA DE CR�DITO, POUPAN�A E INVESTIMENTO NOROESTE RS/;89049738;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+625;CORA SCD S.A.;37880206;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+626;CPC VALE DO RIO DOCE;25606237;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+627;CREDCREA;05979692;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+628;CREDIALIAN�A CCR;78157146;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+629;CREDICOAMO;81723108;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+630;CREDIFIT SCD S.A.;39676772;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+631;CREDISAN CC;62109566;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+632;CREDISIS - CENTRAL DE COOPERATIVAS DE CR�DITO LTDA.;04632856;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+633;CREDISIS CAPITALCREDI - CCLA DO ACRE LTDA.;05439425;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+634;CREDISIS CREDIARI COOP LTDA.;03222753;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+635;CREDISIS OESTE - CCI DO OESTE;04985665;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+636;CREDISIS SUDOESTE/RO;03985375;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+637;CREDISIS/COOPESA;06975532;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+638;CREDISIS/CREDISUL COOPERATIVA DE CR�DITO;07494300;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+639;CREDIT� S.A. CFI;12599971;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+640;CREDSYSTEM IP;;Institui��o de Pagamento;Sim;;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+641;CREDSYSTEM SCD S.A.;39664698;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+642;CRED-UFES;27302181;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+643;CREDZ S.A. IP;12109247;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+644;CREFISA S.A. CFI;60779196;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+645;CREHNOR LARANJEIRAS;01330387;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+646;CRESOL CONFEDERA��O;10398952;Cooperativa de Cr�dito;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+647;CREVISC;10143743;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+648;CRYSTAL IP;;Institui��o de Pagamento;Sim;;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+649;CSU;01896779;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+650;DELCRED SCD S.A.;38224857;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+651;DLOCAL BRASIL IP S.A.;25021356;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+652;DMCARD;22371651;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+653;DOCK IP S.A.;13370835;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+654;DOTZPAY IP;32024691;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+655;EBANX IP LTDA.;21018182;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+656;ECOMOVI;33053580;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+657;EF� S.A. - IP;09089356;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+658;EWALLY IP S.A.;00714671;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+659;F2B;03856113;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+660;FFCRED SCD S.A.;39738065;Sociedade de Cr�dito Direto;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+661;FIDUCIA SCMEPP LTDA;04307598;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+662;FITBANK IP;13203354;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+663;FLAGSHIP IP LTDA;23114447;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+664;FURNAS;33370115;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+665;GALAX PAY IP S.A.;30765018;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+666;GAZINCRED S.A. SCFI;11760553;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+667;GLOBAL SCM LTDA;11165756;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+668;GOOGLE PAY BRASIL IP LTDA.;43394419;Institui��o de Pagamento;Sim;Indireta;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+669;GREENCRED CC;02347114;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+670;HSCM SCMEPP LTDA.;07693858;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+671;HUB IP S.A.;13884775;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+672;ID CTVM;16695922;Sociedade Corretora de TVM;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+673;�NDIGO INVESTIMENTOS DTVM LTDA.;00329598;Sociedade Distribuidora de TVM;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+674;INICIADOR IP LTDA;;Institui��o de Pagamento;Sim;;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+675;INOVANTI IP S.A.;37511258;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+676;ISSUER IP LTDA.;34747388;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+677;ITA� UNIBANCO S.A.;60701190;Banco M�ltiplo;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+678;IUGU IP S.A.;15111975;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+679;J17 - SCD S/A;40475846;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+680;KREDIT BANK;34678263;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+681;LISTO SCD S.A.;34088029;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+682;LOGBANK IP S.A.;28505126;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+683;MACREBANK;38460917;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+684;MAG IP LTDA.;21995256;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+685;MAGALU PAGAMENTOS;17948578;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+686;MAGNUM SCD;44683140;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+687;MEDCRED CC;03575699;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+688;MERCADO PAGO IP LTDA.;10573521;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+689;MICROCASH SCMEPP LTDA.;45756448;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+690;MIDWAY S.A. - SCFI;09464032;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+691;MK DIGITAL ;35624319;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+692;MONETARIE SCD;46026562;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+693;MONEY CLOUD;30153943;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+694;N26 SCD;40867163;Sociedade de Cr�dito Direto;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+695;NEON PAGAMENTOS S.A. IP;20855875;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+696;NG.CASH;40710595;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+697;NOVO BCO CONTINENTAL S.A. - BM;74828799;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+698;NU PAGAMENTOS - IP;18236120;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+699;NUMBRS SCD S.A.;38129006;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+700;NUPAY FOR BUSINESS IP LTDA.;32219232;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+701;OMNI BANCO S.A.;60850229;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+702;ONBANK IP SA;32914717;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+703;ONEKEY PAYMENTS IP S.A.;35210410;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+704;�TIMO SCD S.A.;34335592;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+705;PAGAR.ME INSTITUICAO DE PAGAME;18727053;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+706;PAGARE IP S.A.;25104230;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+707;PAGCERTO IP LTDA.;17819084;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+708;PAGME IP LTDA;34471744;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+709;PAGSEGURO INTERNET IP S.A.;08561701;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+710;PAGUEVELOZ IP LTDA.;03816413;Institui��o de Pagamento;Sim;Indireta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+711;PARANA BCO S.A.;14388334;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+712;PARATI - CFI S.A.;03311443;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+713;PAY2ALL IP LTDA.;44815065;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+714;PAYBROKERS IP;40820176;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+715;PAYMEE BRASIL;28683892;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+716;PEFISA S.A. - C.F.I.;43180355;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+717;PHI PAGAMENTOS;31752308;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+718;PICPAY;22896431;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+719;PICPAY BANK - BANCO M�LTIPLO S.A;09516419;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N�o
+720;PINBANK IP;17079937;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+721;PLANNER SOCIEDADE DE CR�DITO DIRETO;05684234;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+722;PORTOSEG S.A. CFI;04862600;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+723;QESH IP LTDA.;31818873;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+724;QI SCD S.A.;32402502;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+725;QUANTO NETWORK IP;;Institui��o de Pagamento;Sim;;Facultativa;Iniciador;Ativo em opera��o plena;Sim;N/A
+726;QUERO-QUERO VERDECARD IP S.A.;01722480;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+727;RAS SERVI�OS DIGITAIS LTDA.;37934459;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;N�o;N/A
+728;REALIZE CFI S.A.;27351731;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+729;RECARGAPAY IP LTDA.;11275560;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+730;REPASSES FINANCEIROS E SOLUCOES TECNOLOGICAS IP S.A.;40473435;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+731;S3 TECNOLOGIA E SOLUCOES DE PA;31711972;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+732;SERVNET IP LTDA.;29759316;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+733;SICOOB AMAZ�NIA;05203605;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+734;SICOOB CENTRAL NE;70116611;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+735;SICOOB COCRED CC;71328769;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+736;SICOOB CONEX�O;32430233;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+737;SICOOB COOPERMAIS;31804966;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+738;SICOOB COOPVALE;33924028;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+739;SICOOB CRED COPERCANA;64739121;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+740;SICOOB CREDFAZ;00952415;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+741;SICOOB CREDICONSUMO CC;47074323;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+742;SICOOB CREDICOOP;41931221;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+743;SICOOB CREDIGOI�S CC;37255049;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+744;SICOOB CREDILEITE;86585049;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+745;SICOOB CREDIMED - CCLA DE UBERABA LTDA;71336432;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+746;SICOOB CREDIROCHAS;03358914;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+747;SICOOB CREDISUL;03632872;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+748;SICOOB CREDIUNI�O;02448839;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+749;SICOOB DFMIL;04649337;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+750;SICOOB EMPRESARIAL;05856736;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+751;SICOOB EMPRESAS RJ;04120633;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+752;SICOOB FLUMINENSE;02931668;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+753;SICOOB JUDICI�RIO;37076205;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+754;SICOOB LESTE;02493000;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+755;SICOOB POTIGUAR;02382755;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+756;SICOOB SERVIDORES;01330295;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+757;SICOOB SUL;32467086;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+758;SICOOB SUL-LITOR�NEO;32474884;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+759;SICOOB SUL-SERRANO;00815319;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+760;SICOOB UNIMAIS CENTRO LESTE PAULISTA;01259518;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+761;SICOOB VALE DOS PINHAIS;86791837;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+762;SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP;81466286;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+763;SICREDI CEAR�;72257793;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+764;SICREDI CREDUNI;03428338;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+765;SICREDI INTEGRA��O DE ESTADOS RS/SC/MG;87781530;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+766;SICREDI RECIFE;70241658;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+767;SIMPAUL;68757681;Sociedade Corretora de TVM;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+768;SISPRIME DO BRASIL - COOP;02398976;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+769;SKILOPAY INTERMEDIACOES E SOLU;35480428;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+770;SLED;13207930;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+771;SOC CC SICOOB COOPERE;73398646;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+772;SOCIAL BANK S/A;15173776;Banco M�ltiplo;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+773;SOCINAL S.A. CFI;03881423;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+774;SOCRED SA - SCMEPP;09210106;Sociedade de Cr�dito ao Microempreendedor;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;Sim
+775;SOLARPAY IP S.A.;35210425;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+776;STARK BANK S.A.;20018183;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+777;STARK SCD S.A.;39908427;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Liquidante Especial;Ativo em opera��o plena;N�o;N/A
+778;STN;00394460;Governo;N�o;Direta;Facultativa;Ente Governamental;Ativo em opera��o plena;N�o;N/A
+779;STONE IP S.A.;16501555;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+780;SUMUP SCD S.A.;37241230;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+781;SUPERDIGITAL I.P. S.A.;09554480;Institui��o de Pagamento;Sim;Direta;Obrigat�ria;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+782;SUPERL�GICA SCD S.A.;43599047;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+783;SWAP MP IP SA;31680151;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+784;TARGET BANK;14821124;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;N�o;N/A
+785;TRANSFEERA IP S.A.;27084098;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+786;TRAVELEX BANCO DE C�MBIO S.A.;11703662;Banco de C�mbio;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+787;TRINUS SCD S.A.;40654622;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+788;TRIVALE;00604122;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+789;TRIX SERVICOS DE TECNOLOGIA;27126513;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+790;U4C INSTITUI��O DE PAGAMENTO S.A.;30980539;Institui��o de Pagamento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;Sim;N/A
+791;UNAVANTI SCD S/A;42047025;Sociedade de Cr�dito Direto;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o restrita;N�o;N�o
+792;UNICRED AMPLA;71163315;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+793;UNICRED COSTA DO SOL RJ;39231527;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+794;UNICRED ELEVA;95163002;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+795;UNICRED HORIZONTES;01526924;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+796;UNICRED PIONEIRA;94243839;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+797;UNICRED PONTO CAPITAL;02641032;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+798;UNICRED PROSPERAR;01705236;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+799;UNICRED REGI�O DOS VALES;01796302;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+800;UNICRED SUDOESTE DA BAHIA;02833202;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+801;UNIPRIME COOPCENTRAL LTDA.;03046391;Cooperativa de Cr�dito;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+802;UNIPRIME DO IGUA�U - CC POUP INV;01848322;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+803;UNIPRIME OURO - COOP DE OURO;07853842;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+804;UNIPRIME PIONEIRA CC;01286361;Cooperativa de Cr�dito;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+805;UY3 SCD S/A;39587424;Sociedade de Cr�dito Direto;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;Sim
+806;UZZIPAY IP S.A.;32192325;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+807;VALEPAY;28220872;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+808;VALLOO PAGAMENTOS;23273917;Institui��o de Pagamento n�o sujeita � autoriza��o pelo BCB;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+809;VORTX DTVM LTDA.;22610500;Sociedade Distribuidora de TVM;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+810;WILL;36272465;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+811;Z1 IP LTDA.;35810871;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+812;ZEMA CFI S/A;05351887;Sociedade de Cr�dito, Financiamento e Investimento;Sim;Direta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N�o
+813;ZOOP MEIOS DE PAGAMENTO;19468242;Institui��o de Pagamento;Sim;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
+814;ZRO IP S/A;26264220;Institui��o de Pagamento;N�o;Indireta;Facultativa;Provedor de Conta Transacional;Ativo em opera��o plena;N�o;N/A
