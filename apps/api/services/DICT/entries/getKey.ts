@@ -18,7 +18,7 @@ export default async (req: FastifyRequest<{
     const params = req.params;
 
     // Checking if key exceeds 77 length max
-    const parsed_path: { err: unknown | null, data: z.infer<typeof getKeySchema> | null } = zodValidator(getKeySchema)((params), false);
+    const parsed_path: { err: unknown | null, data: z.infer<typeof getKeySchema> | null } = zodValidator(getKeySchema, params);
     if(parsed_path.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_path.err));
     }

@@ -11,7 +11,7 @@ import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
-    const parsed_body: { err: unknown | null, data: z.infer<typeof createEntrySchema> | null } = zodValidator(createEntrySchema)(req, true);
+    const parsed_body: { err: unknown | null, data: z.infer<typeof createEntrySchema> | null } = zodValidator(createEntrySchema, req);
     if (parsed_body.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
     };
