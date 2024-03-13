@@ -10,7 +10,13 @@ function xmlBodyParserPlugin(validate: boolean = true) {
     function execute(fastify: FastifyInstance, options: any, next: Function) {
         const opts = Object.assign({}, defaults, options || {})
         function contentParser(req: any, payload: any, done: Function) {
-            const xmlParser = new XMLParser();
+            const xmlParser = new XMLParser({
+                numberParseOptions: {
+                    leadingZeros: true,
+                    hex: true,
+                    skipLike: /\+[0-9]{10}/,
+                }
+              });
             const parsingOpts = opts;
 
             let body = ''

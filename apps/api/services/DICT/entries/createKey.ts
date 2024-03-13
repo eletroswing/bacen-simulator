@@ -22,11 +22,18 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
         const branch = parsed_body.data?.CreateEntryRequest.Entry.Account.Branch.toString().padStart(4, '0');
         const institution = await database.get_sync(query, [participant, branch]);
 
+        if (!institution) return res.code(403).headers({
+            "content-type": "application/problem+xml"
+        }).send(errors.forbidden());
 
         const query_account = 'SELECT * FROM accounts WHERE account_number = ? AND account_type = ? AND institution = ?';
         const account_number = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString().padStart(20, '0');
         const account_type = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountType.toString();
         const account = await database.get_sync(query_account, [account_number, account_type, institution.id]);
+
+        if (!account) return res.code(403).headers({
+            "content-type": "application/problem+xml"
+        }).send(errors.forbidden());
 
         var query_key = 'SELECT * FROM keys WHERE key = ? AND key_type = ? AND person_type = ? AND tax_id = ? AND name = ?';
         const key = parsed_body.data?.CreateEntryRequest.Entry.Key.toString();
@@ -38,7 +45,7 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
 
         const account_key = await database.get_sync(query_key, params);
 
-        if (!institution || !account || account_key) return res.code(403).headers({
+        if (account_key) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
