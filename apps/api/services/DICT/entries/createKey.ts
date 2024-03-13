@@ -11,54 +11,47 @@ import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
-    const parsed_body: { err: unknown | null, data: z.infer<typeof createEntrySchema> | null } = zodValidator(createEntrySchema)(req);
+    const parsed_body: { err: unknown | null, data: z.infer<typeof createEntrySchema> | null } = zodValidator(createEntrySchema)(req, true);
     if (parsed_body.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
     };
 
     try {
-        const query = 'SELECT * FROM institutions WHERE participant = ? AND branch = ?';
+        const query = 'SELECT * FROM tb_Institutions WHERE ispbNumber = ?';
         const participant = parsed_body.data?.CreateEntryRequest.Entry.Account.Participant.toString().padStart(8, '0');
-        const branch = parsed_body.data?.CreateEntryRequest.Entry.Account.Branch.toString().padStart(4, '0');
-        const institution = await database.get_sync(query, [participant, branch]);
+        const institution = await database.get_sync(query, [participant]);
 
         if (!institution) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        const query_account = 'SELECT * FROM accounts WHERE account_number = ? AND account_type = ? AND institution = ?';
+        const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ?';
         const account_number = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString().padStart(20, '0');
-        const account_type = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountType.toString();
-        const account = await database.get_sync(query_account, [account_number, account_type, institution.id]);
+        const account = await database.get_sync(query_account, [account_number]);
 
         if (!account) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        var query_key = 'SELECT * FROM keys WHERE key = ? AND key_type = ? AND person_type = ? AND tax_id = ? AND name = ?';
+        const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
         const key = parsed_body.data?.CreateEntryRequest.Entry.Key.toString();
-        const key_type = parsed_body.data?.CreateEntryRequest.Entry.KeyType.toString();
-        const person_type = parsed_body.data?.CreateEntryRequest.Entry.Owner.Type.toString();
         const tax_id = parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString();
-        const name = parsed_body.data?.CreateEntryRequest.Entry.Owner.Name.toString();
-        const params = [key, key_type, person_type, tax_id, name]
 
-        const account_key = await database.get_sync(query_key, params);
+        const account_key = await database.get_sync(query_key, [key, tax_id, account_number]);
 
         if (account_key) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        const query_create_key = `INSERT INTO keys  VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+        // TODO: Make openClaimCreationDate a null value
+        const query_create_key = `INSERT INTO tb_Entries VALUES (?, ?, ?, ?, ?, ?)`;
         await database.run_sync(query_create_key, [
-            crypto.randomUUID(),
             parsed_body.data?.CreateEntryRequest.Entry.Key.toString(),
-            parsed_body.data?.CreateEntryRequest.Entry.KeyType.toString(), 
-            parsed_body.data?.CreateEntryRequest.Entry.Owner.Type.toString(), 
             parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString(),
-            parsed_body.data?.CreateEntryRequest.Entry.Owner.Name.toString(), 
-            parsed_body.data?.CreateEntryRequest.Entry.Owner.TradeName?.toString(),
-            account.id
+            parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString(),
+            parsed_body.data?.CreateEntryRequest.Entry.KeyType.toString(), 
+            new Date().toISOString(),
+            new Date().toISOString()
         ]);
 
         return res.code(201).headers({ "content-type": "application/xml" }).send(buildXml({
@@ -70,7 +63,7 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
                     Key: parsed_body.data?.CreateEntryRequest.Entry.Key,
                     KeyType: parsed_body.data?.CreateEntryRequest.Entry.KeyType,
                     Account: {
-                        Particint: parsed_body.data?.CreateEntryRequest.Entry.Account.Participant,
+                        Participant: parsed_body.data?.CreateEntryRequest.Entry.Account.Participant,
                         Branch: parsed_body.data?.CreateEntryRequest.Entry.Account.Branch,
                         AccountNumber: parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber,
                         AccountType: parsed_body.data?.CreateEntryRequest.Entry.Account.AccountType,

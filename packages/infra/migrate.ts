@@ -23,9 +23,9 @@ const initial_queries: string[] = [
     );`,
 
     `CREATE TABLE IF NOT EXISTS tb_Entries (
+        key                    TEXT NOT NULL PRIMARY KEY,
         taxIdNumber            TEXT NOT NULL,
         accountNumber          TEXT NOT NULL,
-        key                    TEXT NOT NULL,
         keyType                TEXT NOT NULL,
         keyOwnershipDate       TEXT,
         openClaimCreationDate  TEXT

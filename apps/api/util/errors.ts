@@ -20,7 +20,18 @@ const forbidden = () => buildXml({
     }
 })
 
+const not_found = () => buildXml({
+    problem: {
+        "xmlns": "urn:ietf:rfc:7807",
+        type: "https://dict.pi.rsfn.net.br/api/v2/error/NotFound",
+        title: "Not found",
+        status: 404,
+        detail: "Entry associated with given key does not exist"
+    }
+})
+
 export default Object.freeze({
     service_unvaible,
     forbidden,
+    not_found
 })
