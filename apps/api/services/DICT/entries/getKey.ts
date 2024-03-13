@@ -70,6 +70,6 @@ export default async (req: FastifyRequest<{
         logger.error(e);
         return res.code(503)
         .headers({"content-type": "application/problem+xml"})
-        .send(errors.not_found());
+        .send(errors.service_unvaible());
     }
 }
