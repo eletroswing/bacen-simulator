@@ -6,6 +6,7 @@ declare module 'sqlite3' {
     interface Database {
         get_sync: (sql: string, params: any) => Promise<any>;
         run_sync: (sql: string, params: any) => Promise<any>;
+        get_multiple_sync: (sql: string, params: any) => Promise<any>;
     }
 }
 
@@ -32,6 +33,26 @@ database.run_sync = async (sql: string, params: any): Promise<any> => {
             }
 
             return resolve(row)
+        })
+    })
+
+};
+
+database.get_multiple_sync = async (sql: string, params: any): Promise<any> => {
+    return await new Promise((resolve, reject) => {
+        let rows: any[] = [];
+        database.each(sql, params, (err: Error | null, row: unknown) => {
+            if (err) {
+                return reject(err);
+            }
+
+            rows.push(row)
+        }, (err, count ) => {
+            if (err) {
+                return reject(err);
+            }
+
+            resolve(rows)
         })
     })
 
