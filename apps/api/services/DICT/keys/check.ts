@@ -10,12 +10,12 @@ import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
-    const parsed_body: { err: unknown | null, data: z.infer<typeof CheckKeysRequest> | null } = zodValidator(CheckKeysRequest)(req);
+    const parsed_body: { err: unknown | null, data: z.infer<typeof CheckKeysRequest> | null } = zodValidator(CheckKeysRequest)(req, true);
     if (parsed_body.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
     };
 
-    var query = `SELECT * FROM 'keys' WHERE key = '' `;
+    var query = `SELECT * FROM 'tb_Entries' WHERE key = '' `;
     const params: string[] = [];
 
     if (typeof parsed_body.data?.CheckKeysRequest.Keys.Key == 'object') {

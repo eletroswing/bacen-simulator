@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
 
-import getKeySchema from '@api/schemas/DICT/getKeySchema';
+import getKeySchema from '@api/schemas/DICT/getAndDeleteKeyQuerySchema';
 import zodValidator from '@api/util/zodValidator';
 
 import buildXml from '@api/util/buildXml';
@@ -30,7 +30,7 @@ export default async (req: FastifyRequest<{
         
         if(!queriedKey) {
             return res.code(404).headers({
-                "content-type": "problem+xml"
+                "content-type": "application/problem+xml"
             }).send(errors.not_found());
         }
 

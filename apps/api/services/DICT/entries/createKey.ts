@@ -17,33 +17,34 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
     };
 
     try {
-        const query = 'SELECT * FROM tb_Institutions WHERE ispbNumber = ?';
         const participant = parsed_body.data?.CreateEntryRequest.Entry.Account.Participant.toString().padStart(8, '0');
-        const institution = await database.get_sync(query, [participant]);
-
-        if (!institution) return res.code(403).headers({
-            "content-type": "application/problem+xml"
-        }).send(errors.forbidden());
-
-        const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ?';
+        const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ? AND participant = ?';
         const account_number = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString().padStart(20, '0');
-        const account = await database.get_sync(query_account, [account_number]);
+        const account = await database.get_sync(query_account, [account_number, participant]);
 
         if (!account) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
+        const query_owner = 'SELECT * FROM tb_Owners WHERE taxIdNumber = ? AND type = ? AND tradeName = ? AND name = ?';
+        const tax_id = parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString();
+        const type = parsed_body.data?.CreateEntryRequest.Entry.Owner.Type.toString();
+        const name = parsed_body.data?.CreateEntryRequest.Entry.Owner.Name.toString();
+        const tradeName = parsed_body.data?.CreateEntryRequest.Entry.Owner.TradeName ? parsed_body.data?.CreateEntryRequest.Entry.Owner.TradeName.toString() : `null`;
+        const owner = await database.get_sync(query_owner, [tax_id, type, tradeName, name]);
+
+        if (!owner) return res.code(403).headers({
+            "content-type": "application/problem+xml"
+        }).send(errors.forbidden());
+
         const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
         const key = parsed_body.data?.CreateEntryRequest.Entry.Key.toString();
-        const tax_id = parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString();
-
         const account_key = await database.get_sync(query_key, [key, tax_id, account_number]);
 
         if (account_key) return res.code(403).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        // TODO: Make openClaimCreationDate a null value
         const query_create_key = `INSERT INTO tb_Entries VALUES (?, ?, ?, ?, ?, ?)`;
         await database.run_sync(query_create_key, [
             parsed_body.data?.CreateEntryRequest.Entry.Key.toString(),
