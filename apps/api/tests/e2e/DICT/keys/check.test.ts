@@ -16,16 +16,16 @@ describe('Check  Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
-            <AccountNumber>0000000000</AccountNumber>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -79,16 +79,16 @@ describe('Check  Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
-            <AccountNumber>0000000000</AccountNumber>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>

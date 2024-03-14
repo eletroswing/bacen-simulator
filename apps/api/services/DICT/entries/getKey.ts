@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
 
-import getKeySchema from '@api/schemas/DICT/getKeySchema';
+import getKeySchema from '@api/schemas/DICT/getAndDeleteKeyQuerySchema';
 import zodValidator from '@api/util/zodValidator';
 
 import buildXml from '@api/util/buildXml';
@@ -18,7 +18,7 @@ export default async (req: FastifyRequest<{
     const params = req.params;
 
     // Checking if key exceeds 77 length max
-    const parsed_path: { err: unknown | null, data: z.infer<typeof getKeySchema> | null } = zodValidator(getKeySchema)((params), false);
+    const parsed_path: { err: unknown | null, data: z.infer<typeof getKeySchema> | null } = zodValidator(getKeySchema, params);
     if(parsed_path.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_path.err));
     }
@@ -30,7 +30,7 @@ export default async (req: FastifyRequest<{
         
         if(!queriedKey) {
             return res.code(404).headers({
-                "content-type": "problem+xml"
+                "content-type": "application/problem+xml"
             }).send(errors.not_found());
         }
 

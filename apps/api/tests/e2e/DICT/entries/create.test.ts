@@ -16,16 +16,16 @@ describe('Create Entry Tests on DICT ', () => {
         <Key>${crypto.randomUUID()}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
-            <AccountNumber>0000000000</AccountNumber>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -51,16 +51,16 @@ describe('Create Entry Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
-            <AccountNumber>0000000000</AccountNumber>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -80,16 +80,16 @@ describe('Create Entry Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
-            <AccountNumber>0000000000</AccountNumber>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -100,6 +100,42 @@ describe('Create Entry Tests on DICT ', () => {
     expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
     expect(fetchedData.status).toBe(403);
   });
+
+  test('Create with an inexists owner', async () => {
+    const key = crypto.randomUUID();
+    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/xml'
+      },
+      body: `<?xml version="1.0" encoding="UTF-8" ?>
+<CreateEntryRequest>
+    <Signature></Signature>
+    <Entry>
+        <Key>${key}</Key>
+        <KeyType>EVP</KeyType>
+        <Account>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
+            <AccountNumber>45740085150077534000</AccountNumber>
+            <AccountType>CACC</AccountType>
+            <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
+        </Account>
+        <Owner>
+            <Type>NATURAL_PERSON</Type>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo silv</Name>
+        </Owner>
+    </Entry>
+    <Reason>USER_REQUESTED</Reason>
+    <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
+</CreateEntryRequest>`
+    })
+
+    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
+    expect(fetchedData.status).toBe(403);
+  });
+
 
   test('Create without passing a body', async () => {
     const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
@@ -129,19 +165,19 @@ describe('Create Entry Tests on DICT ', () => {
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
-        <Key>+5561988880000</Key>
+        <Key>+5561988880001</Key>
         <KeyType>PHONE</KeyType>
         <Account>
-            <Participant>24313102</Participant>
-            <Branch>0000</Branch>
+            <Participant>09515813</Participant>
+            <Branch>0001</Branch>
             <AccountNumber>0007654321</AccountNumber>
             <AccountType>CACC</AccountType>
             <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
             <TradeName>Some nme</TradeName>
         </Owner>
     </Entry>
@@ -185,8 +221,8 @@ describe('Create Entry Tests on DICT ', () => {
         </Account>
         <Owner>
             <Type>LEGAL_PERSON</Type>
-            <TaxIdNumber>11122233300</TaxIdNumber>
-            <Name>João Silva</Name>
+            <TaxIdNumber>89055402842</TaxIdNumber>
+            <Name>Geraldo Pinho</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
