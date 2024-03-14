@@ -8,7 +8,8 @@
     "lint": "biome lint .",
     "format": "biome check . --apply",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "swagger": "swagger-jsdoc -d SConfig.js -o openapi.yml"
   },
   "repository": "https://github.com/eletroswing/bacen-simulator",
   "author": "eletroswing",
