@@ -19,6 +19,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
     };
 
     return {
+      // TODO: Create a generic error handler on errors.ts
       err: {
         problem: {
           "@xmlns": "urn:ietf:rfc:7807",
@@ -43,6 +44,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
   const condition = !["text/xml", "application/xml", "application/rss+xml"].includes(req.headers['content-type'] as string);
   if (condition) {
     return {
+      // TODO: Create a generic error handler on errors.ts
       err: {
         problem: {
           "@xmlns": "urn:ietf:rfc:7807",
@@ -77,6 +79,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
   };
 
   return {
+    // TODO: Create a generic error handler on errors.ts
     err: {
       problem: {
         "@xmlns": "urn:ietf:rfc:7807",
