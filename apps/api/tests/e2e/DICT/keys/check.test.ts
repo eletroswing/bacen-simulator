@@ -1,7 +1,7 @@
 import {describe, expect, test} from '@jest/globals';
 import orchestrator from '../../orchestrator';
 
-describe('Check  Tests on DICT ', () => {
+describe('Check Tests on DICT ', () => {
   test('Check passing a valid body', async () => {
     const key = crypto.randomUUID()
     await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
@@ -16,16 +16,16 @@ describe('Check  Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>09515813</Participant>
+            <Participant>00000001</Participant>
             <Branch>0001</Branch>
-            <AccountNumber>45740085150077534000</AccountNumber>
+            <AccountNumber>00000000000000000001</AccountNumber>
             <AccountType>CACC</AccountType>
-            <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
+            <OpeningDate>2024-03-15T14:24:05.347Z</OpeningDate>
         </Account>
         <Owner>
             <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>89055402842</TaxIdNumber>
-            <Name>Geraldo Pinho</Name>
+            <TaxIdNumber>00000000001</TaxIdNumber>
+            <Name>Testing Name</Name>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -43,7 +43,7 @@ describe('Check  Tests on DICT ', () => {
 
     expect(fetchedData.headers.get('content-type')).toBe('application/xml');
     expect(fetchedData.status).toBe(200);
-    expect(await fetchedData.text()).toBe(`<?xml version="1.0" encode="UTF-8" standalone="yes"?><CheckKeysRequest><Keys><Key hasEntry>${key}</Key></Keys></CheckKeysRequest>`);
+    expect(await fetchedData.text()).toBe(`<?xml version="1.0" encode="UTF-8" standalone="yes"?><CheckKeysRequest><Keys><Key hasEntry="true">${key}</Key></Keys></CheckKeysRequest>`);
   });
 
   test('Check passing a valid body and key that dont exists', async () => {
@@ -63,7 +63,7 @@ describe('Check  Tests on DICT ', () => {
  
   });
 
-  test('Check passing a valid body', async () => {
+  test('Check passing a valid body with 2 keys (true and false)', async () => {
     const key = crypto.randomUUID()
     const key2 = crypto.randomUUID()
 
@@ -79,16 +79,17 @@ describe('Check  Tests on DICT ', () => {
         <Key>${key}</Key>
         <KeyType>EVP</KeyType>
         <Account>
-            <Participant>09515813</Participant>
+            <Participant>00000001</Participant>
             <Branch>0001</Branch>
-            <AccountNumber>45740085150077534000</AccountNumber>
+            <AccountNumber>00000000000000000001</AccountNumber>
             <AccountType>CACC</AccountType>
-            <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
+            <OpeningDate>2024-03-15T14:24:05.347Z</OpeningDate>
         </Account>
         <Owner>
-            <Type>NATURAL_PERSON</Type>
-            <TaxIdNumber>89055402842</TaxIdNumber>
-            <Name>Geraldo Pinho</Name>
+            <Type>LEGAL_PERSON</Type>
+            <TaxIdNumber>00000000000002</TaxIdNumber>
+            <Name>Testing Legal Name</Name>
+            <TradeName>Test Trade Name</TradeName>
         </Owner>
     </Entry>
     <Reason>USER_REQUESTED</Reason>
@@ -106,7 +107,7 @@ describe('Check  Tests on DICT ', () => {
 
     expect(fetchedData.headers.get('content-type')).toBe('application/xml');
     expect(fetchedData.status).toBe(200);
-    expect(await fetchedData.text()).toBe(`<?xml version="1.0" encode="UTF-8" standalone="yes"?><CheckKeysRequest><Keys><Key hasEntry>${key}</Key><Key hasEntry="false">${key2}</Key></Keys></CheckKeysRequest>`);
+    expect(await fetchedData.text()).toBe(`<?xml version="1.0" encode="UTF-8" standalone="yes"?><CheckKeysRequest><Keys><Key hasEntry="true">${key}</Key><Key hasEntry="false">${key2}</Key></Keys></CheckKeysRequest>`);
   });
 
 });
