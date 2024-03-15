@@ -1,10 +1,12 @@
-import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify'
+import fastify, { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
+
 import logger from '@repo/infra/logger';
 
 import XmlBodyParser from '@api/plugins/xmlBodyParser';
+import SwaggerJsDocsUiPlugin from '@api/plugins/SwaggerJsDocsUiPlugin';
 import router from '@api/routes';
-import buildXml from './util/buildXml';
-import statusCode from './util/statusCode';
+import buildXml from '@api/util/buildXml';
+import statusCode from '@api/util/statusCode';
 
 const server: FastifyInstance = fastify();
 
@@ -32,8 +34,22 @@ function errorHandler(error: Error, request: FastifyRequest, reply: FastifyReply
 }
 
 server.setErrorHandler(errorHandler);
-
 server.register(XmlBodyParser(true));
+
+server.register(SwaggerJsDocsUiPlugin({
+  route: '/docs',
+  options: {
+    definition: {
+      openapi: '3.1.0',
+      info: {
+        title: 'Bacen Simulator',
+        version: '0.0.1',
+        description: 'Documentation for a Bacen Simulator',
+      },
+    },
+    apis: ['routes/**/*.yml'],
+  }
+}));
 
 server.register(router, { prefix: 'api' });
 
