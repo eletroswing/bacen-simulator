@@ -1,4 +1,5 @@
 import z, { Schema } from "zod";
+import statusCode from "./statusCode";
 
 function parse(schema: Schema, content: any): { err: unknown | null, data: z.infer<typeof schema> | null } {
   const isReq: boolean = Boolean(content.headers);
@@ -25,7 +26,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
           "@xmlns": "urn:ietf:rfc:7807",
           type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid",
           title: "Entry is invalid",
-          status: 400,
+          status: statusCode.BAD_REQUEST,
           detail: "Entry has invalid paths",
           violations: [
             {
@@ -50,7 +51,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
           "@xmlns": "urn:ietf:rfc:7807",
           type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid",
           title: "Entry is invalid",
-          status: 400,
+          status: statusCode.BAD_REQUEST,
           detail: "Entry has invalid fields",
           violations: [
             {
@@ -86,7 +87,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
         "@xmlns": "urn:ietf:rfc:7807",
         type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid",
         title: "Entry is invalid",
-        status: 400,
+        status: statusCode.BAD_REQUEST,
         detail: "Entry has invalid fields",
         violations: [
           {

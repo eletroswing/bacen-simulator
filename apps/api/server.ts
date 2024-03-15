@@ -4,18 +4,19 @@ import logger from '@repo/infra/logger';
 import XmlBodyParser from '@api/plugins/xmlBodyParser';
 import router from '@api/routes';
 import buildXml from './util/buildXml';
+import statusCode from './util/statusCode';
 
 const server: FastifyInstance = fastify();
 
 function errorHandler(error: Error, request: FastifyRequest, reply: FastifyReply) {
-  return reply.code(400).headers({
+  return reply.code(statusCode.BAD_REQUEST).headers({
     "content-type": "application/problem+xml"
   }).send(buildXml({
     problem: {
       "@xmlns": "urn:ietf:rfc:7807",
       type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid",
       title: "Entry is invalid",
-      status: 400,
+      status: statusCode.BAD_REQUEST,
       detail: "Entry has invalid fields",
       violations: [
         {

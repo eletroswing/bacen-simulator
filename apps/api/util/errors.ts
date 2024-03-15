@@ -1,11 +1,12 @@
 import buildXml from "./buildXml";
+import statusCode from "./statusCode";
 
 const service_unvaible = () => buildXml({
     problem: {
         "@xmlns": "urn:ietf:rfc:7807",
         type: "https://dict.pi.rsfn.net.br/api/v2/error/ServiceUnavailable",
         title: "Service Unavailable",
-        status: 503,
+        status: statusCode.SERVICE_UNAVAIBLE,
         detail: "Service is under scheduled maintenance",
     }
 })
@@ -15,7 +16,7 @@ const forbidden = () => buildXml({
         "@xmlns": "urn:ietf:rfc:7807",
         type: "https://dict.pi.rsfn.net.br/api/v2/error/Forbidden",
         title: "Forbidden",
-        status: 403,
+        status: statusCode.FORBIDDEN,
         detail: "Participant is not allowed to access this resource",
     }
 })
@@ -25,7 +26,7 @@ const not_found = () => buildXml({
         "xmlns": "urn:ietf:rfc:7807",
         type: "https://dict.pi.rsfn.net.br/api/v2/error/NotFound",
         title: "Not found",
-        status: 404,
+        status: statusCode.NOT_FOUND,
         detail: "Entry associated with given key does not exist"
     }
 })
