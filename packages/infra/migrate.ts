@@ -18,7 +18,7 @@ const initial_queries: string[] = [
         accountNumber          TEXT NOT NULL PRIMARY KEY,
         participant            TEXT NOT NULL,
         accountType            TEXT NOT NULL,
-        opening_date           TEXT,
+        openingDate            TEXT,
         branch                 TEXT
     );`,
 
