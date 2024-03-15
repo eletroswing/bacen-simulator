@@ -49,8 +49,8 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
             }),
             new Promise(async (resolve, reject) => {
                 try {
-                    const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
-                    const account_key = await database.get_sync(query_key, [Key, Owner.TaxIdNumber, Account.AccountType]);
+                    const query_key = 'SELECT * FROM tb_Entries WHERE key = ?';
+                    const account_key = await database.get_sync(query_key, [Key]);
                     resolve(account_key)
                 } catch (e: unknown) {
                     reject(e)
