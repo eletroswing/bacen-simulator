@@ -8,80 +8,87 @@ import createEntrySchema from '@api/schemas/DICT/createEntrySchema';
 import database from '@repo/infra/database';
 import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
+import statusCode from '@api/util/statusCode';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
     const parsed_body: { err: unknown | null, data: z.infer<typeof createEntrySchema> | null } = zodValidator(createEntrySchema, req);
-    if (parsed_body.err) {
-        return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
+    if (parsed_body.err || !parsed_body.data) {
+        return res.code(statusCode.BAD_REQUEST).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
     };
 
     try {
-        const participant = parsed_body.data?.CreateEntryRequest.Entry.Account.Participant.toString().padStart(8, '0');
-        const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ? AND participant = ?';
-        const account_number = parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString().padStart(20, '0');
-        const account = await database.get_sync(query_account, [account_number, participant]);
+        const { CreateEntryRequest: {
+            RequestId,
+            Signature,
+            Entry: {
+                Account,
+                Key,
+                Owner,
+                KeyType
+            },
+        } }: z.infer<typeof createEntrySchema> = parsed_body.data;
 
-        if (!account) return res.code(403).headers({
+        const queries_result: any[] = await Promise.allSettled([
+            new Promise(async (resolve, reject) => {
+                try {
+                    const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ? AND participant = ?';
+                    const account = await database.get_sync(query_account, [Account.AccountNumber, Account.Participant]);
+                    resolve(account)
+                } catch (e: unknown) {
+                    reject(e)
+                }
+            }),
+            new Promise(async (resolve, reject) => {
+                try {
+                    const query_owner = 'SELECT * FROM tb_Owners WHERE taxIdNumber = ? AND type = ? AND tradeName = ? AND name = ?';
+                    const owner = await database.get_sync(query_owner, [Owner.TaxIdNumber, Owner.Type, Owner.TradeName || 'null', Owner.Name]);
+                    resolve(owner)
+                } catch (e: unknown) {
+                    reject(e)
+                }
+            }),
+            new Promise(async (resolve, reject) => {
+                try {
+                    const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
+                    const account_key = await database.get_sync(query_key, [Key, Owner.TaxIdNumber, Account.AccountType]);
+                    resolve(account_key)
+                } catch (e: unknown) {
+                    reject(e)
+                }
+            })
+        ])
+
+        if (!queries_result[0].value || !queries_result[1].value || queries_result[2].value) return res.code(statusCode.FORBIDDEN).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        const query_owner = 'SELECT * FROM tb_Owners WHERE taxIdNumber = ? AND type = ? AND tradeName = ? AND name = ?';
-        const tax_id = parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString();
-        const type = parsed_body.data?.CreateEntryRequest.Entry.Owner.Type.toString();
-        const name = parsed_body.data?.CreateEntryRequest.Entry.Owner.Name.toString();
-        const tradeName = parsed_body.data?.CreateEntryRequest.Entry.Owner.TradeName ? parsed_body.data?.CreateEntryRequest.Entry.Owner.TradeName.toString() : `null`;
-        const owner = await database.get_sync(query_owner, [tax_id, type, tradeName, name]);
-
-        if (!owner) return res.code(403).headers({
-            "content-type": "application/problem+xml"
-        }).send(errors.forbidden());
-
-        const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
-        const key = parsed_body.data?.CreateEntryRequest.Entry.Key.toString();
-        const account_key = await database.get_sync(query_key, [key, tax_id, account_number]);
-
-        if (account_key) return res.code(403).headers({
-            "content-type": "application/problem+xml"
-        }).send(errors.forbidden());
-
-        const query_create_key = `INSERT INTO tb_Entries VALUES (?, ?, ?, ?, ?, ?)`;
-        await database.run_sync(query_create_key, [
-            parsed_body.data?.CreateEntryRequest.Entry.Key.toString(),
-            parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber.toString(),
-            parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber.toString(),
-            parsed_body.data?.CreateEntryRequest.Entry.KeyType.toString(), 
+        await database.run_sync(`INSERT INTO tb_Entries VALUES (?, ?, ?, ?, ?, ?)`, [
+            Key,
+            Owner.TaxIdNumber,
+            Account.AccountNumber,
+            KeyType,
             new Date().toISOString(),
             new Date().toISOString()
         ]);
 
         return res.code(201).headers({ "content-type": "application/xml" }).send(buildXml({
             CreateEntryResponse: {
-                Signature: parsed_body.data?.CreateEntryRequest.Signature,
+                Signature: Signature,
                 ResponseTime: new Date().toISOString(),
-                CorrelationId: parsed_body.data?.CreateEntryRequest.RequestId,
+                CorrelationId: RequestId,
                 Entry: {
-                    Key: parsed_body.data?.CreateEntryRequest.Entry.Key,
-                    KeyType: parsed_body.data?.CreateEntryRequest.Entry.KeyType,
-                    Account: {
-                        Participant: parsed_body.data?.CreateEntryRequest.Entry.Account.Participant,
-                        Branch: parsed_body.data?.CreateEntryRequest.Entry.Account.Branch,
-                        AccountNumber: parsed_body.data?.CreateEntryRequest.Entry.Account.AccountNumber,
-                        AccountType: parsed_body.data?.CreateEntryRequest.Entry.Account.AccountType,
-                        OpeningDate: parsed_body.data?.CreateEntryRequest.Entry.Account.OpeningDate,
-                    },
-                    Owner: {
-                        Type: parsed_body.data?.CreateEntryRequest.Entry.Owner.Type,
-                        TaxIdNumber: parsed_body.data?.CreateEntryRequest.Entry.Owner.TaxIdNumber,
-                        Name: parsed_body.data?.CreateEntryRequest.Entry.Owner.Name,
-                    },
+                    Key: Key,
+                    KeyType: KeyType,
+                    Account: Account,
+                    Owner: Owner,
                     CreationDate: new Date().toISOString(),
                     KeyOwnershipDate: new Date().toISOString()
                 },
-              }
+            }
         }));
     } catch (e: unknown) {
         logger.warn(e);
-        return res.code(503).headers({
+        return res.code(statusCode.SERVICE_UNAVAIBLE).headers({
             "content-type": "application/problem+xml"
         }).send(errors.service_unvaible());
     }
