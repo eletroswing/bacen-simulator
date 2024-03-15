@@ -38,14 +38,63 @@ async function runSeed(): Promise<void> {
         return Math.floor(Math.random() * (99999999999 - 10000000000) + 10000000000);
     }
 
+    function generateLegalTaxID() {
+        return Math.floor(Math.random() * (99999999999999 - 10000000000000) + 10000000000000);
+    }
+
     function generateAccountNumber() {
         return Math.floor(Math.random() * (99999999999999999999 - 10000000000000000000) + 10000000000000000000);
     }
+
+    // Create a test institution for e2e testing
+    promises.push(new Promise((resolve: Function, reject: Function) =>
+        database.run(`INSERT INTO tb_Institutions VALUES ('00000001', 'TESTE LTDA.')`, (err: Error | null) => {
+            if (err) {
+                logger.warn(`Error running query: `, err);
+                return reject(err)
+            }
+            return resolve(true)
+        }
+    )));
+
+    // Create a test natural owner for e2e testing
+    promises.push(new Promise((resolve: Function, reject: Function) =>
+        database.run(`INSERT INTO tb_Owners VALUES ('00000000001', 'NATURAL_PERSON', 'Testing Name', 'null')`, (err: Error | null) => {
+            if (err) {
+                logger.warn(`Error running query: `, err);
+                return reject(err)
+            }
+            return resolve(true)
+        }
+    )));
+
+    // Create a test legal owner for e2e testing
+    promises.push(new Promise((resolve: Function, reject: Function) =>
+        database.run(`INSERT INTO tb_Owners VALUES ('00000000000002', 'LEGAL_PERSON', 'Testing Legal Name', 'Test Trade Name')`, (err: Error | null) => {
+            if (err) {
+                logger.warn(`Error running query: `, err);
+                return reject(err)
+            }
+            return resolve(true)
+        }
+    )));
+
+    // Create a test account for e2e testing
+    promises.push(new Promise((resolve: Function, reject: Function) =>
+        database.run(`INSERT INTO tb_Accounts VALUES ('00000000000000000001', '00000001', 'CACC', '2024-03-15T14:24:05.347Z', '0001')`, (err: Error | null) => {
+            if (err) {
+                logger.warn(`Error running query: `, err);
+                return reject(err)
+            }
+            return resolve(true)
+        }
+    )));
 
     readLines(readStream, (line: any) => {
         const institution_data = line.split(`;`);
         if (institution_data[2] && institution_data[2] != 'ISPB') {
             const taxId = generateTaxID();
+            const legalTaxId = generateLegalTaxID();
             const accountNumber = generateAccountNumber();
 
             // Create a institution based on the actual line
@@ -62,6 +111,17 @@ async function runSeed(): Promise<void> {
             // Create a new owner
             promises.push(new Promise((resolve: Function, reject: Function) =>
                 database.run(`INSERT INTO tb_Owners VALUES ('${taxId}', 'NATURAL_PERSON', 'Geraldo Pinho', '${null}')`, (err: Error | null) => {
+                    if (err) {
+                        logger.warn(`Error running query: `, err);
+                        return reject(err)
+                    }
+                    return resolve(true)
+                }
+            )));
+
+            // Create a new legal owner
+            promises.push(new Promise((resolve: Function, reject: Function) =>
+                database.run(`INSERT INTO tb_Owners VALUES ('${legalTaxId}', 'LEGAL_PERSON', 'Sílvio Santos', 'SBT')`, (err: Error | null) => {
                     if (err) {
                         logger.warn(`Error running query: `, err);
                         return reject(err)

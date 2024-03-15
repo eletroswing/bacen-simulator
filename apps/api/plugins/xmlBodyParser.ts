@@ -12,7 +12,7 @@ function xmlBodyParserPlugin(validate: boolean = true) {
         function contentParser(req: any, payload: any, done: Function) {
             const xmlParser = new XMLParser({
                 numberParseOptions: {
-                    leadingZeros: true,
+                    leadingZeros: false,
                     hex: true,
                     skipLike: /\+[0-9]{10}/,
                 }

@@ -29,16 +29,16 @@ describe('Testing the "entries" get path', () => {
               <Key>${key}</Key>
               <KeyType>EVP</KeyType>
               <Account>
-                  <Participant>09515813</Participant>
+                  <Participant>00000001</Participant>
                   <Branch>0001</Branch>
-                  <AccountNumber>45740085150077534000</AccountNumber>
+                  <AccountNumber>00000000000000000001</AccountNumber>
                   <AccountType>CACC</AccountType>
-                  <OpeningDate>2010-01-10T03:00:00Z</OpeningDate>
+                  <OpeningDate>2024-03-15T14:24:05.347Z</OpeningDate>
               </Account>
               <Owner>
                   <Type>NATURAL_PERSON</Type>
-                  <TaxIdNumber>89055402842</TaxIdNumber>
-                  <Name>Geraldo Pinho</Name>
+                  <TaxIdNumber>00000000001</TaxIdNumber>
+                  <Name>Testing Name</Name>
               </Owner>
           </Entry>
           <Reason>USER_REQUESTED</Reason>

@@ -36,9 +36,9 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
             "content-type": "application/problem+xml"
         }).send(errors.forbidden());
 
-        const query_key = 'SELECT * FROM tb_Entries WHERE key = ? AND taxIdNumber = ? AND accountNumber = ?';
+        const query_key = 'SELECT * FROM tb_Entries WHERE key = ?';
         const key = parsed_body.data?.CreateEntryRequest.Entry.Key.toString();
-        const account_key = await database.get_sync(query_key, [key, tax_id, account_number]);
+        const account_key = await database.get_sync(query_key, [key]);
 
         if (account_key) return res.code(403).headers({
             "content-type": "application/problem+xml"
