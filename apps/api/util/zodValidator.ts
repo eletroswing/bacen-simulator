@@ -66,6 +66,7 @@ function parse(schema: Schema, content: any): { err: unknown | null, data: z.inf
     }
   }
 
+  console.log(req.body[`CreateEntryRequest`])
   const parsed: any = schema.safeParse(req.body);
   if (parsed.success) {
     return { err: null, data: req.body };
