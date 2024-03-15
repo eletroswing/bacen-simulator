@@ -12,6 +12,7 @@ export default (obj: any) => {
     const builder = new XMLBuilder({
         attributeNamePrefix: "@",
         ignoreAttributes: false,
+        suppressBooleanAttributes: false
     });
 
     return builder.build(obj);
