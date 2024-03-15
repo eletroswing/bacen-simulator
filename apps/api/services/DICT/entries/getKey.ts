@@ -16,57 +16,69 @@ export default async (req: FastifyRequest<{
 }>, res: FastifyReply) => {
     // Checking if key exceeds 77 length max
     const parsed_path: { err: unknown | null, data: z.infer<typeof keyPathSchema> | null } = zodValidator(keyPathSchema, req.params);
-    if(parsed_path.err) {
+    if (parsed_path.err) {
         return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_path.err));
     }
-    
+
     try {
-        const queryKey = 'SELECT * FROM tb_Entries WHERE key = ?';
-        const parsedKey = parsed_path.data?.key;
-        const queriedKey = await database.get_sync(queryKey, [parsedKey]);
-        
-        if(!queriedKey) {
-            return res.code(404).headers({
-                "content-type": "application/problem+xml"
-            }).send(errors.not_found());
-        }
+        const queriedKey = await database.get_sync('SELECT * FROM tb_Entries WHERE key = ?', [parsed_path.data?.key]);
 
-        const queryAccount = 'SELECT * FROM tb_Accounts WHERE accountNumber = ?';
-        const queriedAccount = await database.get_sync(queryAccount, [queriedKey.accountNumber]);
+        if (!queriedKey) return res.code(404).headers({
+            "content-type": "application/problem+xml"
+        }).send(errors.not_found());
 
-        const queryOwner = 'SELECT * FROM tb_Owners WHERE taxIdNumber = ?';
-        const queriedOwner = await database.get_sync(queryOwner, [queriedKey.taxIdNumber]);
+        const queries_result: any[] = await Promise.allSettled([
+            new Promise(async (resolve, reject) => {
+                try {
+                    const queriedAccount = await database.get_sync('SELECT * FROM tb_Accounts WHERE accountNumber = ?', [queriedKey.accountNumber]);
+                    resolve(queriedAccount)
+                } catch (e: unknown) {
+                    reject(e)
+                }
+            }),
+            new Promise(async (resolve, reject) => {
+                try {
+                    const queriedOwner = await database.get_sync('SELECT * FROM tb_Owners WHERE taxIdNumber = ?', [queriedKey.taxIdNumber]);
+                    resolve(queriedOwner)
+                } catch (e: unknown) {
+                    reject(e)
+                }
+            }),
+        ])
 
-        const correlationId = crypto.randomUUID();
+        var owner: any = {
+            Type: queries_result[1].value.type,
+            TaxIdNumber: queries_result[1].value.taxIdNumber,
+            Name: queries_result[1].value.name
+        };
+
+        if(queries_result[1].value.type === "LEGAL_PERSON") owner[`TradeName`] = queries_result[1].value.tradeName;
+
         return res.code(200).headers({
             "content-type": "application/xml"
         }).send(buildXml({
             GetEntryResponse: {
                 Signature: '',
                 ResponseTime: new Date().toISOString(),
-                CorrelationId: correlationId,
+                CorrelationId: crypto.randomUUID(),
                 Entry: {
                     Key: queriedKey.key,
                     KeyType: queriedKey.keyType,
                     Account: {
-                        Participant: queriedAccount.participant,
-                        Branch: queriedAccount.branch,
-                        AccountNumber: queriedAccount.accountNumber,
-                        AccountType: queriedAccount.accountType,
-                        OpeningDate: queriedAccount.openingDate
+                        Participant: queries_result[0].value.participant,
+                        Branch: queries_result[0].value.branch,
+                        AccountNumber: queries_result[0].value.accountNumber,
+                        AccountType: queries_result[0].value.accountType,
+                        OpeningDate: queries_result[0].value.openingDate
                     },
-                    Owner: {
-                        Type: queriedOwner.type,
-                        TaxIdNumber: queriedOwner.taxIdNumber,
-                        Name: queriedOwner.name
-                    }
+                    Owner: owner
                 }
             }
         }))
     } catch (e) {
         logger.error(e);
         return res.code(503)
-        .headers({"content-type": "application/problem+xml"})
-        .send(errors.service_unvaible());
+            .headers({ "content-type": "application/problem+xml" })
+            .send(errors.service_unvaible());
     }
 }
