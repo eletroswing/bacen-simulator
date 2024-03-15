@@ -1,6 +1,5 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { z } from 'zod';
-import crypto from 'crypto';
 
 import buildXml from '@api/util/buildXml';
 import zodValidator from '@api/util/zodValidator';
