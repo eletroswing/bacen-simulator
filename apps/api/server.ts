@@ -47,7 +47,7 @@ server.register(SwaggerJsDocsUiPlugin({
         description: 'Documentation for a Bacen Simulator',
       },
     },
-    apis: ['schemas/**/*.yml'],
+    apis: ['services/**/**/*.yml'],
   }
 }));
 
