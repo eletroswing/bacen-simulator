@@ -1,9 +1,7 @@
 module.exports = {
     info: {
-        title: 'Sample API',
-        version: '1.0.0',
-        description: 'Documentation for a simple Express API',
+        title: 'Bacen Simulator',
+        version: '0.0.1',
+        description: 'Documentation for a Bacen Simulator',
     },
-    basePath: '/',
-    apis: ['./routes/**/*.yml']
 }
