@@ -9,7 +9,7 @@
     "format": "biome check . --apply",
     "test": "jest",
     "test:watch": "jest --watch",
-    "swagger": "swagger-jsdoc -d SConfig.js -o openapi.json routes/**/*.yml"
+    "swagger": "swagger-jsdoc -d SConfig.js -o openapi.json schemas/**/*.yml"
   },
   "repository": "https://github.com/eletroswing/bacen-simulator",
   "author": "eletroswing",
