@@ -1,0 +1,347 @@
+/api/dict/entries/{Key}:
+  get:
+    summary: Get data about an key
+    parameters:
+        - in: path
+          name: Key
+          schema:
+            type: string
+          required: true
+          description: Key to check
+    responses:
+      "200":
+        description: OK
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/GetEntryResponse'
+      "404":
+          description: Not Found
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+      "503":
+        description: Service Unavailable
+        content:
+          application/problem+xml:
+            schema:
+              $ref: '#/components/schemas/ServiceUnavailableError'
+  put:
+    summary: Update a key link
+    parameters:
+        - in: path
+          name: Key
+          schema:
+            type: string
+          required: true
+          description: Key to check
+    requestBody:
+      required: true
+      content:
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/UpdateEntryRequest'
+    responses:
+      "200":
+        description: OK
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/UpdateEntryResponse'
+      "400":
+          description: Bad Request
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+      "403":
+          description: Forbidden
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/ForbiddenError'
+      "404":
+          description: Not Found
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+      "503":
+        description: Service Unavailable
+        content:
+          application/problem+xml:
+            schema:
+              $ref: '#/components/schemas/ServiceUnavailableError'
+components:
+  schemas:
+    NotFoundError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/NotFound"
+          title: Not found
+          status: 404
+          detail: Entry associated with given key does not exist    
+    BadRequestError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+               type: integer
+            detail:
+              type: string
+            violations:
+              type: object
+              properties:
+                violation:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      reason:
+                        type: string
+                      value:
+                        type: string
+                      property:
+                        type: string
+      example:
+        problem:
+          xmlns: "urn:ietf:rfc:7807"
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid"
+          title: "Entry is invalid"
+          status: 400
+          detail: "Entry has invalid fields"
+          violations:
+            violation:
+              - reason: "Value does not match regex ^\\+[1-9]\\d{1,14}$"
+                value: "61988887777"
+                property: "entry.key"
+    ForbiddenError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/Forbidden"
+          title: Forbidden
+          status: 403
+          detail: Participant is not allowed to access this resource
+    ServiceUnavailableError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/ServiceUnavailable"
+          title: Service Unavailable
+          status: 503
+          detail: Service is under scheduled maintenance
+    UpdateEntryRequest:
+      type: object
+      properties:
+        Signature:
+          type: string
+        Key:
+          type: string
+        Account:
+          type: object
+          properties:
+            Participant:
+              type: string
+            Branch:
+              type: string
+            AccountNumber:
+              type: string
+            AccountType:
+              type: string
+            OpeningDate:
+              type: string
+        Owner:
+          type: object
+          properties:
+            Type:
+              type: string
+            TaxIdNumber:
+              type: string
+            Name:
+              type: string
+        Reason:
+          type: string
+      example:
+        Signature: ''
+        Key: "+5561988887777"
+        Account:
+          Participant: "12345678"
+          Branch: "0001"
+          AccountNumber: "0007654321"
+          AccountType: "CACC"
+          OpeningDate: "2010-01-10T03:00:00Z"
+        Owner:
+          Type: "NATURAL_PERSON"
+          TaxIdNumber: "11122233300"
+          Name: "João Silva"
+        Reason: "USER_REQUESTED"
+    UpdateEntryResponse:
+      type: object
+      properties:
+        Signature:
+          type: string
+        ResponseTime:
+          type: string
+        CorrelationId:
+          type: string
+        Entry:
+          type: object
+          properties:
+            Key:
+              type: string
+            KeyType:
+              type: string
+            Account:
+              type: object
+              properties:
+                Participant:
+                  type: string
+                Branch:
+                  type: string
+                AccountNumber:
+                  type: string
+                AccountType:
+                  type: string
+                OpeningDate:
+                  type: string
+            Owner:
+              type: object
+              properties:
+                Type:
+                  type: string
+                TaxIdNumber:
+                  type: string
+                Name:
+                  type: string
+            CreationDate:
+              type: string
+            KeyOwnershipDate:
+              type: string
+      example:
+        Signature: ''
+        ResponseTime: "2020-01-10T10:00:00.000Z"
+        CorrelationId: "a9f13566e19f5ca51329479a5bae60c5"
+        Entry:
+          Key: "11122233300"
+          KeyType: "CPF"
+          Account:
+            Participant: "12345678"
+            Branch: "0001"
+            AccountNumber: "0007654321"
+            AccountType: "CACC"
+            OpeningDate: "2010-01-10T03:00:00.000Z"
+          Owner:
+            Type: "NATURAL_PERSON"
+            TaxIdNumber: "11122233300"
+            Name: "João Silva"
+          CreationDate: "2019-11-18T03:00:00.000Z"
+          KeyOwnershipDate: "2019-11-18T03:00:00.000Z"
+    GetEntryResponse:
+      type: object
+      properties:
+        Signature:
+          type: string
+        ResponseTime:
+          type: string
+        CorrelationId:
+          type: string
+        Entry:
+          type: object
+          properties:
+            Key:
+              type: string
+            KeyType:
+              type: string
+            Account:
+              type: object
+              properties:
+                Participant:
+                  type: string
+                Branch:
+                  type: string
+                AccountNumber:
+                  type: string
+                AccountType:
+                  type: string
+                OpeningDate:
+                  type: string
+            Owner:
+              type: object
+              properties:
+                Type:
+                  type: string
+                TaxIdNumber:
+                  type: string
+                Name:
+                  type: string
+            CreationDate:
+              type: string
+            KeyOwnershipDate:
+              type: string
+            OpenClaimCreationDate:
+              type: string
+      example:
+        Signature: ''
+        ResponseTime: "2020-01-10T10:00:00Z"
+        CorrelationId: "a9f13566e19f5ca51329479a5bae60c5"
+        Entry:
+          Key: "11122233300"
+          KeyType: "CPF"
+          Account:
+            Participant: "12345678"
+            Branch: "0001"
+            AccountNumber: "0007654321"
+            AccountType: "CACC"
+            OpeningDate: "2010-01-10T03:00:00Z"
+          Owner:
+            Type: "NATURAL_PERSON"
+            TaxIdNumber: "11122233300"
+            Name: "João Silva"
+          CreationDate: "2019-11-18T03:00:00Z"
+          KeyOwnershipDate: "2019-11-18T03:00:00Z"
+          OpenClaimCreationDate: "2019-11-19T03:00:00Z"
