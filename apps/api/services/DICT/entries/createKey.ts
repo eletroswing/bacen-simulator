@@ -9,8 +9,8 @@ import errors from '@api/util/errors';
 import statusCode from '@api/util/statusCode';
 import database from '@repo/infra/database';
 import logger from '@repo/infra/logger';
+import type { RecursiveRecord } from '@api/types/recursiveRecord';
 
-type RecursiveRecord = { [key: string]: never | RecursiveRecord };
 type PromiseResponse = { value: RecursiveRecord };
 
 export default async (req: FastifyRequest, res: FastifyReply) => {

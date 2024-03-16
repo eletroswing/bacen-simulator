@@ -10,7 +10,7 @@ import statusCode from '@api/util/statusCode';
 import database from '@repo/infra/database';
 import logger from '@repo/infra/logger';
 
-type RecursiveRecord = { [key: string]: never | RecursiveRecord };
+import type { RecursiveRecord } from '@api/types/recursiveRecord';
 type PromiseResponse = { value: RecursiveRecord };
 
 export default async (

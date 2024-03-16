@@ -1,14 +1,5 @@
 import { XMLBuilder } from 'fast-xml-parser';
-
-type RecursiveRecord = {
-	[key: string]:
-		| string
-		| number
-		| object
-		| RecursiveRecord[]
-		| never
-		| RecursiveRecord;
-};
+import type { RecursiveRecord } from '@api/types/recursiveRecord';
 
 export default (obj: RecursiveRecord) => {
 	let newObj: RecursiveRecord = {};
