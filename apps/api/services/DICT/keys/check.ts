@@ -23,7 +23,7 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
 		} = zodValidator(CheckKeysRequest, req);
 		if (parsed_body.err) {
 			return res
-				.code(400)
+				.code(statusCode.BAD_REQUEST)
 				.headers({ 'content-type': 'application/problem+xml' })
 				.send(buildXml(parsed_body.err as RecursiveRecord));
 		}
