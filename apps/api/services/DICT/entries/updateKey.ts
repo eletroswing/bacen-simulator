@@ -43,17 +43,17 @@ export default async (req: FastifyRequest<{
         }).send(errors.forbidden())
 
         await database.exec_sync(`BEGIN TRANSACTION`);
-        try {
-            await database.run_sync(`UPDATE tb_Accounts SET participant = ?, branch = ?, accountType = ?, openingDate = ? WHERE accountNumber = ?`, [Account.Participant, Account.Branch, Account.AccountType, Account.OpeningDate, queriedEntry.accountNumber])
-            await database.run_sync(`UPDATE tb_Owners SET type = ?, name = ?, tradeName = ? WHERE taxIdNumber = ?`, [Owner.Type, Owner.Name, Owner.TradeName || "null", queriedEntry.taxIdNumber])
-            await database.exec_sync(`COMMIT`);
-        } catch (e: unknown) {
-            await database.exec_sync(`ROLLBACK`);
-            logger.error(e);
-            return res.code(statusCode.SERVICE_UNAVAIBLE)
-                .headers({ "content-type": "application/problem+xml" })
-                .send(errors.service_unvaible());
-        }
+        const results = await Promise.allSettled([
+            database.run_sync(`UPDATE tb_Accounts SET participant = ?, branch = ?, accountType = ?, openingDate = ? WHERE accountNumber = ?`, [Account.Participant, Account.Branch, Account.AccountType, Account.OpeningDate, queriedEntry.accountNumber]),
+            database.run_sync(`UPDATE tb_Owners SET type = ?, name = ?, tradeName = ? WHERE taxIdNumber = ?`, [Owner.Type, Owner.Name, Owner.TradeName || "null", queriedEntry.taxIdNumber]),
+        ]);
+
+        results.forEach(result => {
+            if (result.status === 'rejected') {
+                throw new Error(`Promise rejected: ${result.reason}`);
+            }
+        });
+        await database.exec_sync(`COMMIT`);
 
         return res.code(statusCode.OK).headers({
             "content-type": "application/xml"
@@ -73,6 +73,7 @@ export default async (req: FastifyRequest<{
             }
         }));
     } catch (e) {
+        await database.exec_sync(`ROLLBACK`);
         logger.error(e);
         return res.code(statusCode.SERVICE_UNAVAIBLE)
             .headers({ "content-type": "application/problem+xml" })

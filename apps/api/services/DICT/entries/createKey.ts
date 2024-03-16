@@ -29,33 +29,9 @@ export default async (req: FastifyRequest, res: FastifyReply) => {
         } }: z.infer<typeof createEntrySchema> = parsed_body.data;
 
         const queries_result: any[] = await Promise.allSettled([
-            new Promise(async (resolve, reject) => {
-                try {
-                    const query_account = 'SELECT * FROM tb_Accounts WHERE accountNumber = ? AND participant = ?';
-                    const account = await database.get_sync(query_account, [Account.AccountNumber, Account.Participant]);
-                    resolve(account)
-                } catch (e: unknown) {
-                    reject(e)
-                }
-            }),
-            new Promise(async (resolve, reject) => {
-                try {
-                    const query_owner = 'SELECT * FROM tb_Owners WHERE taxIdNumber = ? AND type = ? AND tradeName = ? AND name = ?';
-                    const owner = await database.get_sync(query_owner, [Owner.TaxIdNumber, Owner.Type, Owner.TradeName || 'null', Owner.Name]);
-                    resolve(owner)
-                } catch (e: unknown) {
-                    reject(e)
-                }
-            }),
-            new Promise(async (resolve, reject) => {
-                try {
-                    const query_key = 'SELECT * FROM tb_Entries WHERE key = ?';
-                    const account_key = await database.get_sync(query_key, [Key]);
-                    resolve(account_key)
-                } catch (e: unknown) {
-                    reject(e)
-                }
-            })
+            database.get_sync('SELECT * FROM tb_Accounts WHERE accountNumber = ? AND participant = ?', [Account.AccountNumber, Account.Participant]),
+            database.get_sync('SELECT * FROM tb_Owners WHERE taxIdNumber = ? AND type = ? AND tradeName = ? AND name = ?', [Owner.TaxIdNumber, Owner.Type, Owner.TradeName || 'null', Owner.Name]),
+            database.get_sync('SELECT * FROM tb_Entries WHERE key = ?', [Key]),
         ])
 
         if (!queries_result[0].value || !queries_result[1].value || queries_result[2].value) return res.code(statusCode.FORBIDDEN).headers({

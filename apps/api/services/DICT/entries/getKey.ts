@@ -29,22 +29,8 @@ export default async (req: FastifyRequest<{
         }).send(errors.not_found());
 
         const queries_result: any[] = await Promise.allSettled([
-            new Promise(async (resolve, reject) => {
-                try {
-                    const queriedAccount = await database.get_sync('SELECT * FROM tb_Accounts WHERE accountNumber = ?', [queriedKey.accountNumber]);
-                    resolve(queriedAccount)
-                } catch (e: unknown) {
-                    reject(e)
-                }
-            }),
-            new Promise(async (resolve, reject) => {
-                try {
-                    const queriedOwner = await database.get_sync('SELECT * FROM tb_Owners WHERE taxIdNumber = ?', [queriedKey.taxIdNumber]);
-                    resolve(queriedOwner)
-                } catch (e: unknown) {
-                    reject(e)
-                }
-            }),
+            database.get_sync('SELECT * FROM tb_Accounts WHERE accountNumber = ?', [queriedKey.accountNumber]),
+            database.get_sync('SELECT * FROM tb_Owners WHERE taxIdNumber = ?', [queriedKey.taxIdNumber]),
         ])
 
         var owner: any = {
