@@ -25,9 +25,6 @@
     "build": {
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "swagger": {
-      "cache": false
-    },
     "type-check": {},
     "format": {},
     "lint": {}

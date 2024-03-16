@@ -13,8 +13,7 @@
     "test:watch": "turbo run test:watch",
     "migration": "turbo run migration",
     "migration:run": "turbo run migration:run",
-    "migration:seed": "turbo run migration:seed",
-    "swagger": "turbo run swagger"
+    "migration:seed": "turbo run migration:seed"
   },
   "config": {
     "commitizen": {
