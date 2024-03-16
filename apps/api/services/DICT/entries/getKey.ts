@@ -8,6 +8,7 @@ import buildXml from '@api/util/buildXml';
 import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
 import database from '@repo/infra/database';
+import statusCode from '@api/util/statusCode';
 
 export default async (req: FastifyRequest<{
     Params: {
@@ -17,13 +18,13 @@ export default async (req: FastifyRequest<{
     // Checking if key exceeds 77 length max
     const parsed_path: { err: unknown | null, data: z.infer<typeof keyPathSchema> | null } = zodValidator(keyPathSchema, req.params);
     if (parsed_path.err) {
-        return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_path.err));
+        return res.code(statusCode.BAD_REQUEST).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_path.err));
     }
 
     try {
         const queriedKey = await database.get_sync('SELECT * FROM tb_Entries WHERE key = ?', [parsed_path.data?.key]);
 
-        if (!queriedKey) return res.code(404).headers({
+        if (!queriedKey) return res.code(statusCode.NOT_FOUND).headers({
             "content-type": "application/problem+xml"
         }).send(errors.not_found());
 
@@ -54,7 +55,7 @@ export default async (req: FastifyRequest<{
 
         if(queries_result[1].value.type === "LEGAL_PERSON") owner[`TradeName`] = queries_result[1].value.tradeName;
 
-        return res.code(200).headers({
+        return res.code(statusCode.OK).headers({
             "content-type": "application/xml"
         }).send(buildXml({
             GetEntryResponse: {
@@ -77,7 +78,7 @@ export default async (req: FastifyRequest<{
         }))
     } catch (e) {
         logger.error(e);
-        return res.code(503)
+        return res.code(statusCode.SERVICE_UNAVAIBLE)
             .headers({ "content-type": "application/problem+xml" })
             .send(errors.service_unvaible());
     }

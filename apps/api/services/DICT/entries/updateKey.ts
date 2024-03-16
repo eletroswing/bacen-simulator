@@ -8,6 +8,7 @@ import buildXml from '@api/util/buildXml';
 import database from '@repo/infra/database';
 import logger from '@repo/infra/logger';
 import errors from '@api/util/errors';
+import statusCode from '@api/util/statusCode';
 
 export default async (req: FastifyRequest<{
     Params: {
@@ -19,7 +20,7 @@ export default async (req: FastifyRequest<{
 
     const parsed_body: { err: unknown | null, data: z.infer<typeof updateEntrySchema> | null } = zodValidator(updateEntrySchema, body);
     if (parsed_body.err || !parsed_body.data) {
-        return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
+        return res.code(statusCode.BAD_REQUEST).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
     };
 
     try {
@@ -33,11 +34,11 @@ export default async (req: FastifyRequest<{
 
         const queriedEntry = await database.get_sync(`SELECT * FROM tb_Entries WHERE key = ?`, [key]);
 
-        if (!queriedEntry) return res.code(404).headers({
+        if (!queriedEntry) return res.code(statusCode.NOT_FOUND).headers({
             "content-type": "application/problem+xml"
         }).send(errors.not_found());
 
-        if (queriedEntry.type === 'EVP' && parsed_body.data?.UpdateEntryRequest.Reason === 'USER_REQUESTED') return res.code(403).headers({
+        if (queriedEntry.type === 'EVP' && parsed_body.data?.UpdateEntryRequest.Reason === 'USER_REQUESTED') return res.code(statusCode.FORBIDDEN).headers({
             "content-type": "application/problem+xml"
         }).send(errors.forbidden())
 
@@ -49,12 +50,12 @@ export default async (req: FastifyRequest<{
         } catch (e: unknown) {
             await database.exec_sync(`ROLLBACK`);
             logger.error(e);
-            return res.code(503)
+            return res.code(statusCode.SERVICE_UNAVAIBLE)
                 .headers({ "content-type": "application/problem+xml" })
                 .send(errors.service_unvaible());
         }
 
-        return res.code(200).headers({
+        return res.code(statusCode.OK).headers({
             "content-type": "application/xml"
         }).send(buildXml({
             updateEntryResponse: {
@@ -73,7 +74,7 @@ export default async (req: FastifyRequest<{
         }));
     } catch (e) {
         logger.error(e);
-        return res.code(503)
+        return res.code(statusCode.SERVICE_UNAVAIBLE)
             .headers({ "content-type": "application/problem+xml" })
             .send(errors.service_unvaible());
     }
