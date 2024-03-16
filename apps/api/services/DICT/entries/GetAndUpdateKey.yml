@@ -1,6 +1,8 @@
 /api/dict/entries/{Key}:
   get:
     summary: Get data about an key
+    tags:
+      - entries
     parameters:
         - in: path
           name: Key
@@ -29,6 +31,8 @@
               $ref: '#/components/schemas/ServiceUnavailableError'
   put:
     summary: Update a key link
+    tags:
+      - entries
     parameters:
         - in: path
           name: Key
