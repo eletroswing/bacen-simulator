@@ -1,0 +1,187 @@
+/api/dict/keys/check:
+  post:
+    summary: Check existence of keys in batches
+    requestBody:
+      required: true
+      content:
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/CreateEntryRequest'
+    responses:
+      "200":
+        description: OK
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/CreateEntryResponse'
+      "403":
+          description: Forbidden
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/ForbiddenError'
+      "503":
+        description: Service Unavailable
+        content:
+          application/problem+xml:
+            schema:
+              $ref: '#/components/schemas/ServiceUnavailableError'
+
+components:
+  schemas:
+    ForbiddenError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/Forbidden"
+          title: Forbidden
+          status: 403
+          detail: Participant is not allowed to access this resource
+    ServiceUnavailableError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/ServiceUnavailable"
+          title: Service Unavailable
+          status: 503
+          detail: Service is under scheduled maintenance
+    CreateEntryRequest:
+      type: object
+      properties:
+        Signature:
+          type: string
+        Entry:
+          type: object
+          properties:
+            Key:
+              type: string
+            KeyType:
+              type: string
+            Account:
+              type: object
+              properties:
+                Participant:
+                  type: string
+                Branch:
+                  type: string
+                AccountNumber:
+                  type: string
+                AccountType:
+                  type: string
+                OpeningDate:
+                  type: string
+            Owner:
+              type: object
+              properties:
+                Type:
+                  type: string
+                TaxIdNumber:
+                  type: string
+                Name:
+                  type: string
+        Reason:
+          type: string
+        RequestId:
+          type: string
+      example:
+        Signature: ''
+        Entry:
+          Key: "+5561988880000"
+          KeyType: "PHONE"
+          Account:
+            Participant: "12345678"
+            Branch: "0001"
+            AccountNumber: "0007654321"
+            AccountType: "CACC"
+            OpeningDate: "2010-01-10T03:00:00Z"
+          Owner:
+            Type: "NATURAL_PERSON"
+            TaxIdNumber: "11122233300"
+            Name: "João Silva"
+        Reason: "USER_REQUESTED"
+        RequestId: "a946d533-7f22-42a5-9a9b-e87cd55c0f4d"
+    CreateEntryResponse:
+      type: object
+      properties:
+        Signature:
+          type: string
+        ResponseTime:
+          type: string
+        CorrelationId:
+          type: string
+        Entry:
+          type: object
+          properties:
+            Key:
+              type: string
+            KeyType:
+              type: string
+            Account:
+              type: object
+              properties:
+                Participant:
+                  type: string
+                Branch:
+                  type: string
+                AccountNumber:
+                  type: string
+                AccountType:
+                  type: string
+                OpeningDate:
+                  type: string
+            Owner:
+              type: object
+              properties:
+                Type:
+                  type: string
+                TaxIdNumber:
+                  type: string
+                Name:
+                  type: string
+            CreationDate:
+              type: string
+            KeyOwnershipDate:
+              type: string
+      example:
+        Signature: ''
+        ResponseTime: "2020-01-10T10:00:00.000Z"
+        CorrelationId: "a9f13566e19f5ca51329479a5bae60c5"
+        Entry:
+          Key: "11122233300"
+          KeyType: "CPF"
+          Account:
+            Participant: "12345678"
+            Branch: "0001"
+            AccountNumber: "0007654321"
+            AccountType: "CACC"
+            OpeningDate: "2010-01-10T03:00:00.000Z"
+          Owner:
+            Type: "NATURAL_PERSON"
+            TaxIdNumber: "11122233300"
+            Name: "João Silva"
+          CreationDate: "2019-11-18T03:00:00.000Z"
+          KeyOwnershipDate: "2019-11-18T03:00:00.000Z"

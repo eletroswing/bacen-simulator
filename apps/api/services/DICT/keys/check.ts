@@ -8,63 +8,48 @@ import CheckKeysRequest from '@api/schemas/DICT/checkKeysRequest';
 import database from '@repo/infra/database';
 import errors from '@api/util/errors';
 import logger from '@repo/infra/logger';
+import statusCode from '@api/util/statusCode';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
-    const parsed_body: { err: unknown | null, data: z.infer<typeof CheckKeysRequest> | null } = zodValidator(CheckKeysRequest, req);
-    if (parsed_body.err) {
-        return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
-    };
+    try {
+        function KeyOnResponse(key: any, response: any[]) {
+            return response.filter(item => item.key == key).length > 0
+        }
 
-    var query = `SELECT * FROM 'tb_Entries' WHERE key = '' `;
-    const params: string[] = [];
+        const parsed_body: { err: unknown | null, data: z.infer<typeof CheckKeysRequest> | null } = zodValidator(CheckKeysRequest, req);
+        if (parsed_body.err) {
+            return res.code(400).headers({ "content-type": "application/problem+xml" }).send(buildXml(parsed_body.err));
+        };
 
-    if (typeof parsed_body.data?.CheckKeysRequest.Keys.Key == 'object') {
-        parsed_body.data?.CheckKeysRequest.Keys.Key.forEach((key) => {
+        var query = `SELECT * FROM 'tb_Entries' WHERE key = '' `;
+
+        if (typeof parsed_body.data?.CheckKeysRequest.Keys.Key !== 'object') parsed_body.data!.CheckKeysRequest.Keys.Key = [parsed_body.data!.CheckKeysRequest.Keys.Key]
+        const params: string[] | undefined = parsed_body.data?.CheckKeysRequest.Keys.Key.map((key) => {
             query = `${query} OR key = ?`;
-            params.push(`${key}`);
+            return key
         });
-    } else {
-        query = `${query} OR key = ?`;
-        params.push(`${parsed_body.data?.CheckKeysRequest.Keys.Key}`);
-    }
 
-    const data_query = await database.get_multiple_sync(query, params);
+        const data_query = await database.get_multiple_sync(query, params);
 
-    const keys = [];
-
-    function KeyOnResponse(key: any, response: any[]) {
-        return response.filter(item => item.key == key).length > 0
-    }
-
-    if (typeof parsed_body.data?.CheckKeysRequest.Keys.Key == 'object') {
-        parsed_body.data?.CheckKeysRequest.Keys.Key.forEach((key) => {
-            keys.push({
+        const keys = parsed_body.data?.CheckKeysRequest.Keys.Key.map((key) => {
+            return {
                 "@hasEntry": `${KeyOnResponse(`${key}`, data_query)}`,
                 "#text": `${key}`
-            })
-        });
-    } else {
-        keys.push({
-            "@hasEntry": `${KeyOnResponse(`${parsed_body.data?.CheckKeysRequest.Keys.Key}`, data_query)}`,
-            "#text": `${parsed_body.data?.CheckKeysRequest.Keys.Key}`
-        })
-    }
-
-    const response_json = {
-        CheckKeysRequest: {
-            Keys: {
-                Key: keys
             }
-        }
-    }
+        });
 
-    try {
-        return res.code(200).headers({
+        return res.code(statusCode.OK).headers({
             "content-type": "application/xml"
-        }).send(buildXml(response_json));
+        }).send(buildXml({
+            CheckKeysRequest: {
+                Keys: {
+                    Key: keys
+                }
+            }
+        }));
     } catch (e: unknown) {
         logger.warn(e);
-        return res.code(503).headers({
+        return res.code(statusCode.FORBIDDEN).headers({
             "content-type": "application/problem+xml"
         }).send(errors.service_unvaible());
     }
