@@ -78,13 +78,8 @@ function xmlBodyParserPlugin(validate = true) {
 			}
 		}
 
-		if (typeof opts.contentType === 'string') {
-			fastify.addContentTypeParser(opts.contentType, contentParser);
-		} else {
-			for (let i = 0; i < opts.contentType.length; i++) {
-				fastify.addContentTypeParser(opts.contentType[i], contentParser);
-			}
-		}
+		for (const type of opts.contentType)
+			fastify.addContentTypeParser(type, contentParser);
 
 		next();
 	}

@@ -4,12 +4,12 @@ import type { z } from 'zod';
 import updateEntrySchema from '@api/schemas/DICT/updateEntrySchema';
 import zodValidator from '@api/util/zodValidator';
 
+import type { RecursiveRecord } from '@api/types/recursiveRecord';
 import buildXml from '@api/util/buildXml';
 import errors from '@api/util/errors';
 import statusCode from '@api/util/statusCode';
 import database from '@repo/infra/database';
 import logger from '@repo/infra/logger';
-import type { RecursiveRecord } from '@api/types/recursiveRecord';
 
 export default async (
 	req: FastifyRequest<{

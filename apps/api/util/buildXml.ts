@@ -1,5 +1,5 @@
-import { XMLBuilder } from 'fast-xml-parser';
 import type { RecursiveRecord } from '@api/types/recursiveRecord';
+import { XMLBuilder } from 'fast-xml-parser';
 
 export default (obj: RecursiveRecord) => {
 	let newObj: RecursiveRecord = {};

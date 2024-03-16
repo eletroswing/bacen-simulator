@@ -1,5 +1,10 @@
 import { z } from 'zod';
 
+function Evaluate(assert: boolean) {
+	if (assert) return undefined;
+	return true;
+}
+
 export default z
 	.object({
 		Type: z.enum(['NATURAL_PERSON', 'LEGAL_PERSON']),
@@ -8,11 +13,10 @@ export default z
 		TradeName: z.coerce.string().nullable(),
 	})
 	.refine(
-		(data) => {
-			if (data.Type === 'NATURAL_PERSON' && data.TradeName !== 'undefined')
-				return undefined;
-			return true;
-		},
+		(data) =>
+			Evaluate(
+				data.Type === 'NATURAL_PERSON' && data.TradeName !== 'undefined',
+			),
 		{
 			message:
 				'TradeName is not required when Type is equal to NATURAL_PERSON.',
@@ -20,64 +24,52 @@ export default z
 		},
 	)
 	.refine(
-		(data) => {
-			if (data.Type === 'LEGAL_PERSON' && data.TradeName === 'undefined')
-				return undefined;
-			return true;
-		},
+		(data) =>
+			Evaluate(data.Type === 'LEGAL_PERSON' && data.TradeName === 'undefined'),
 		{
 			message: 'TradeName is required when Type is equal to LEGAL_PERSON.',
 			path: ['TradeName'],
 		},
 	)
 	.refine(
-		(data) => {
-			if (
-				data.Type === 'NATURAL_PERSON' &&
-				!/^[0-9]{11}$/.test(data.TaxIdNumber)
-			)
-				return undefined;
-			return true;
-		},
+		(data) =>
+			Evaluate(
+				data.Type === 'NATURAL_PERSON' && !/^[0-9]{11}$/.test(data.TaxIdNumber),
+			),
 		{
 			message: "Value does not match regex '/^[0-9]{11}$/'",
 			path: ['TaxIdNumber'],
 		},
 	)
 	.refine(
-		(data) => {
-			if (data.Type === 'LEGAL_PERSON' && !/^[0-9]{14}$/.test(data.TaxIdNumber))
-				return undefined;
-			return true;
-		},
+		(data) =>
+			Evaluate(
+				data.Type === 'LEGAL_PERSON' && !/^[0-9]{14}$/.test(data.TaxIdNumber),
+			),
 		{
 			message: "Value does not match regex '/^[0-9]{14}$/'",
 			path: ['TaxIdNumber'],
 		},
 	)
 	.refine(
-		(data) => {
-			if (
+		(data) =>
+			Evaluate(
 				data.Type === 'NATURAL_PERSON' &&
-				!/^([A-Za-zÀ-ÖØ-öø-ÿ' -]+)$/.test(data.Name)
-			)
-				return undefined;
-			return true;
-		},
+					!/^([A-Za-zÀ-ÖØ-öø-ÿ' -]+)$/.test(data.Name),
+			),
 		{
 			message: "Value does not match regex '/^([A-Za-zÀ-ÖØ-öø-ÿ' -]+)$/'",
 			path: ['Name'],
 		},
 	)
 	.refine(
-		(data) => {
-			if (
+		(data) =>
+			Evaluate(
 				data.Type === 'LEGAL_PERSON' &&
-				!/^([A-Za-zÀ-ÖØ-öø-ÿ,.@:&*+_<>()!?/\\$%\d' -]+)$/.test(data.TaxIdNumber)
-			)
-				return undefined;
-			return true;
-		},
+					!/^([A-Za-zÀ-ÖØ-öø-ÿ,.@:&*+_<>()!?/\\$%\d' -]+)$/.test(
+						data.TaxIdNumber,
+					),
+			),
 		{
 			message:
 				"Value does not match regex '/^([A-Za-zÀ-ÖØ-öø-ÿ,.@:&*+_<>()!?/\\$%d' -]+)$/'",

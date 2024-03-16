@@ -5,11 +5,11 @@ import CheckKeysRequest from '@api/schemas/DICT/checkKeysRequest';
 import buildXml from '@api/util/buildXml';
 import zodValidator from '@api/util/zodValidator';
 
+import type { RecursiveRecord } from '@api/types/recursiveRecord';
 import errors from '@api/util/errors';
 import statusCode from '@api/util/statusCode';
 import database from '@repo/infra/database';
 import logger from '@repo/infra/logger';
-import type { RecursiveRecord } from '@api/types/recursiveRecord';
 
 export default async (req: FastifyRequest, res: FastifyReply) => {
 	try {
