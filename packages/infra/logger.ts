@@ -1,5 +1,5 @@
 //TODO: this is a basic logger system
-const { log, warn, error, info } = console;
+import { log, warn, info, error } from 'console';
 
 function wrapper(fn: Function): Function {
     return (...args: any) => {

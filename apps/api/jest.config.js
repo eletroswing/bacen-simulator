@@ -2,7 +2,9 @@ module.exports = {
 	preset: 'ts-jest',
 	testEnvironment: 'node',
 	moduleNameMapper: {
-		'^@/(.*)$': '<rootDir>/src/$1',
+		"^@api/(.*)$": "<rootDir>/$1",
+		"^@repo/infra/(.*)$": "<rootDir>/../../packages/infra/$1",
+		
 	},
 	testMatch: ['**/*.test.ts'],
 };
