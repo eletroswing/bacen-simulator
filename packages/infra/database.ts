@@ -36,7 +36,6 @@ database.get_sync = async (sql: string, params: any): Promise<any> => {
             return resolve(row)
         })
     })
-
 };
 
 database.run_sync = async (sql: string, params: any): Promise<any> => {
@@ -66,6 +65,7 @@ database.get_multiple_sync = async (sql: string, params: any): Promise<any> => {
                 return reject(err);
             }
 
+            console.log(rows)
             resolve(rows)
         })
     })

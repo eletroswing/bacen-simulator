@@ -1,18 +1,46 @@
 import { describe, expect, test } from '@jest/globals';
 import { XMLParser } from 'fast-xml-parser';
-import orchestrator from '../../orchestrator';
+
+import database from '@repo/infra/database';
+import BuildServer from '@api/buildServer';
+import { type FastifyInstance } from 'fastify';
+
+let Server: FastifyInstance | undefined = undefined;
+
+beforeAll(() => {
+	Server = BuildServer();
+	jest.clearAllMocks();
+});
+
+afterAll(() => {
+	Server?.close();
+	jest.clearAllMocks();
+});
+
+jest.mock('@repo/infra/database');
+const mockedDb = database as jest.Mocked<typeof database>;
 
 describe('Testing the "entries" get path', () => {
 	test('Check key that dont exists', async () => {
-		const fetchedData = await fetch(
-			`${orchestrator.SERVER_URL}/dict/entries/${crypto.randomUUID()}`,
-			{ method: 'GET' },
-		);
-		const parsed = new XMLParser().parse(await fetchedData.text());
-		expect(fetchedData.headers.get('content-type')).toBe(
+		const fetchedData: any = await new Promise((resolve, reject) => Server?.inject(
+			{
+				method: 'GET',
+				url: `api/dict/entries/${crypto.randomUUID()}`,
+			},
+			(err, res) => {
+				if (err) {
+					return reject(err)
+				}
+
+				return resolve(res)
+			}
+		));
+
+		const parsed = new XMLParser().parse(fetchedData.payload);
+		expect(fetchedData.headers['content-type']).toBe(
 			'application/problem+xml',
 		);
-		expect(fetchedData.status).toBe(404);
+		expect(fetchedData.statusCode).toBe(404);
 		expect(parsed.problem.type).toBe(
 			'https://dict.pi.rsfn.net.br/api/v2/error/NotFound',
 		);
@@ -26,41 +54,53 @@ describe('Testing the "entries" get path', () => {
 	test('Check key that exists', async () => {
 		const key = crypto.randomUUID();
 
-		await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/xml',
+		mockedDb.get_sync = jest
+			.fn()
+			.mockResolvedValue({
+				key: '+5500000000000',
+				taxIdNumber: '00000000001',
+				accountNumber: '00000000000000000001',
+				keyType: 'PHONE',
+				keyOwnershipDate: '2024-03-16T22:54:51.426Z',
+				openClaimCreationDate: '2024-03-16T22:54:51.426Z'
+			});
+
+		mockedDb.get_sync = jest
+			.fn()
+			.mockResolvedValue(
+				{
+					accountNumber: '00000000000000000001',
+					participant: '00000001',
+					accountType: 'CACC',
+					openingDate: '2024-03-15T14:24:05.347Z',
+					branch: '0001'
+
+				});
+
+		mockedDb.get_sync = jest
+			.fn()
+			.mockResolvedValue({
+				taxIdNumber: '00000000001',
+				type: 'NATURAL_PERSON',
+				name: 'Testing Name',
+				tradeName: 'null'
+			});
+
+		const fetchedData: any = await new Promise((resolve, reject) => Server?.inject(
+			{
+				method: 'GET',
+				url: `api/dict/entries/${key}`,
 			},
-			body: `<?xml version="1.0" encoding="UTF-8" ?>
-      <CreateEntryRequest>
-          <Signature></Signature>
-          <Entry>
-              <Key>${key}</Key>
-              <KeyType>EVP</KeyType>
-              <Account>
-                  <Participant>00000001</Participant>
-                  <Branch>0001</Branch>
-                  <AccountNumber>00000000000000000001</AccountNumber>
-                  <AccountType>CACC</AccountType>
-                  <OpeningDate>2024-03-15T14:24:05.347Z</OpeningDate>
-              </Account>
-              <Owner>
-                  <Type>NATURAL_PERSON</Type>
-                  <TaxIdNumber>00000000001</TaxIdNumber>
-                  <Name>Testing Name</Name>
-              </Owner>
-          </Entry>
-          <Reason>USER_REQUESTED</Reason>
-          <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-      </CreateEntryRequest>`,
-		});
+			(err, res) => {
+				if (err) {
+					return reject(err)
+				}
 
-		const fetchedData = await fetch(
-			`${orchestrator.SERVER_URL}/dict/entries/${key}`,
-			{ method: 'GET' },
-		);
+				return resolve(res)
+			}
+		));
 
-		expect(fetchedData.headers.get('content-type')).toBe('application/xml');
-		expect(fetchedData.status).toBe(200);
+		expect(fetchedData.headers['content-type']).toBe('application/xml');
+		expect(fetchedData.statusCode).toBe(200);
 	});
 });
