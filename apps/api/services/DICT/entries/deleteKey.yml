@@ -1,0 +1,183 @@
+/api/dict/entries/{Key}/delete:
+  post:
+    summary: Remove key link
+    tags:
+      - entries
+    parameters:
+        - in: path
+          name: Key
+          schema:
+            type: string
+          required: true
+          description: Key to check
+    requestBody:
+      required: true
+      content:
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/DeleteEntryRequest'
+    responses:
+      "200":
+        description: OK
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/DeleteEntryResponse'
+      "400":
+          description: Bad Request
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/BadRequestError'
+      "403":
+          description: Forbidden
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/ForbiddenError'
+      "404":
+          description: Not Found
+          content:
+            application/problem+xml:
+              schema:
+                $ref: '#/components/schemas/NotFoundError'
+      "503":
+        description: Service Unavailable
+        content:
+          application/problem+xml:
+            schema:
+              $ref: '#/components/schemas/ServiceUnavailableError'
+components:
+  schemas:
+    NotFoundError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/NotFound"
+          title: Not found
+          status: 404
+          detail: Entry associated with given key does not exist    
+    BadRequestError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+               type: integer
+            detail:
+              type: string
+            violations:
+              type: object
+              properties:
+                violation:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      reason:
+                        type: string
+                      value:
+                        type: string
+                      property:
+                        type: string
+      example:
+        problem:
+          xmlns: "urn:ietf:rfc:7807"
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid"
+          title: "Entry is invalid"
+          status: 400
+          detail: "Entry has invalid fields"
+          violations:
+            violation:
+              - reason: "Value does not match regex ^\\+[1-9]\\d{1,14}$"
+                value: "61988887777"
+                property: "entry.key"
+    ForbiddenError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/Forbidden"
+          title: Forbidden
+          status: 403
+          detail: Participant is not allowed to access this resource
+    ServiceUnavailableError:
+      type: object
+      properties:
+        problem:
+          type: object
+          properties:
+            type:
+              type: string
+            title:
+              type: string
+            status:
+              type: integer
+            detail:
+              type: string
+      example:
+        problem:
+          type: "https://dict.pi.rsfn.net.br/api/v2/error/ServiceUnavailable"
+          title: Service Unavailable
+          status: 503
+          detail: Service is under scheduled maintenance
+    DeleteEntryRequest:
+      type: object
+      properties:
+        Signature:
+          type: string
+        Key:
+          type: string
+        Participant:
+          type: string
+        Reason:
+          type: string
+      example:
+        Signature: ''
+        Key: "+5561988887777"
+        Participant: "12345678"
+        Reason: "USER_REQUESTED"
+    DeleteEntryResponse:
+      type: object
+      properties:
+        Signature:
+          type: string
+        ResponseTime:
+          type: string
+        CorrelationId:
+          type: string
+        Key:
+          type: string
+      example:
+        Signature: ''
+        ResponseTime: "2020-01-10T10:00:00.000Z"
+        CorrelationId: "a9f13566e19f5ca51329479a5bae60c5"
+        Key: "+5561988887777"
