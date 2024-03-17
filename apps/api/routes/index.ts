@@ -1,8 +1,11 @@
-
 import DICTRouter from '@api/routes/DICT';
-import { FastifyInstance, RegisterOptions } from 'fastify';
+import type { FastifyInstance, RegisterOptions } from 'fastify';
 
-export default (instance: FastifyInstance, _opts: RegisterOptions, done: Function) => {
-    instance.register(DICTRouter, { prefix: 'dict' });
-    done();
-}
+export default (
+	instance: FastifyInstance,
+	_opts: RegisterOptions,
+	done: () => void,
+) => {
+	instance.register(DICTRouter, { prefix: 'dict' });
+	done();
+};

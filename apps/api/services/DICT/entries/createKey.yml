@@ -1,6 +1,8 @@
 /api/dict/entries:
   post:
     summary: Create a new key link with transactional account.
+    tags: 
+      - entries
     requestBody:
       required: true
       content:

@@ -1,16 +1,18 @@
 import { describe, expect, test } from '@jest/globals';
-import orchestrator from '../../orchestrator';
 import { XMLParser } from 'fast-xml-parser';
+import orchestrator from '../../orchestrator';
 
 describe('Testing the "entries" update path', () => {
-    test('Update passing a key that doesnt exists', async () => {
-        const key = crypto.randomUUID();
-        const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries/${key}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/xml'
-            },
-            body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Update passing a key that doesnt exists', async () => {
+		const key = crypto.randomUUID();
+		const fetchedData = await fetch(
+			`${orchestrator.SERVER_URL}/dict/entries/${key}`,
+			{
+				method: 'PUT',
+				headers: {
+					'Content-Type': 'application/xml',
+				},
+				body: `<?xml version="1.0" encoding="UTF-8" ?>
             <UpdateEntryRequest>
                 <Signature></Signature>
                 <Key>${key}</Key>
@@ -27,27 +29,34 @@ describe('Testing the "entries" update path', () => {
                     <Name>Testing Name</Name>
                 </Owner>
                 <Reason>USER_REQUESTED</Reason>
-            </UpdateEntryRequest>`
-        })
+            </UpdateEntryRequest>`,
+			},
+		);
 
-        const parsed = new XMLParser().parse(await fetchedData.text());
-        expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-        expect(fetchedData.status).toBe(404);
-        expect(parsed['?xml']).toBe('');
-        expect(parsed.problem.type).toBe('https://dict.pi.rsfn.net.br/api/v2/error/NotFound');
-        expect(parsed.problem.title).toBe('Not found');
-        expect(parsed.problem.status).toBe(404);
-        expect(parsed.problem.detail).toBe('Entry associated with given key does not exist');
-    });
+		const parsed = new XMLParser().parse(await fetchedData.text());
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(404);
+		expect(parsed['?xml']).toBe('');
+		expect(parsed.problem.type).toBe(
+			'https://dict.pi.rsfn.net.br/api/v2/error/NotFound',
+		);
+		expect(parsed.problem.title).toBe('Not found');
+		expect(parsed.problem.status).toBe(404);
+		expect(parsed.problem.detail).toBe(
+			'Entry associated with given key does not exist',
+		);
+	});
 
-    test('Update passing a key that exists', async () => {
-        const key = crypto.randomUUID();
-        await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/xml'
-            },
-            body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Update passing a key that exists', async () => {
+		const key = crypto.randomUUID();
+		await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
             <CreateEntryRequest>
                 <Signature></Signature>
                 <Entry>
@@ -68,15 +77,17 @@ describe('Testing the "entries" update path', () => {
                 </Entry>
                 <Reason>USER_REQUESTED</Reason>
                 <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-            </CreateEntryRequest>`
-        })
+            </CreateEntryRequest>`,
+		});
 
-        const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries/${key}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/xml'
-            },
-            body: `<?xml version="1.0" encoding="UTF-8" ?>
+		const fetchedData = await fetch(
+			`${orchestrator.SERVER_URL}/dict/entries/${key}`,
+			{
+				method: 'PUT',
+				headers: {
+					'Content-Type': 'application/xml',
+				},
+				body: `<?xml version="1.0" encoding="UTF-8" ?>
             <UpdateEntryRequest>
                 <Signature></Signature>
                 <Key>${key}</Key>
@@ -93,10 +104,11 @@ describe('Testing the "entries" update path', () => {
                     <Name>Testing Name</Name>
                 </Owner>
                 <Reason>USER_REQUESTED</Reason>
-            </UpdateEntryRequest>`
-        })
+            </UpdateEntryRequest>`,
+			},
+		);
 
-        expect(fetchedData.headers.get('content-type')).toBe('application/xml');
-        expect(fetchedData.status).toBe(200);
-    });
+		expect(fetchedData.headers.get('content-type')).toBe('application/xml');
+		expect(fetchedData.status).toBe(200);
+	});
 });

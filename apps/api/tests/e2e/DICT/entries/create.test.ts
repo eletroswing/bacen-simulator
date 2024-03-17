@@ -1,15 +1,15 @@
-import {describe, expect, test} from '@jest/globals';
-import orchestrator from '../../orchestrator';
+import { describe, expect, test } from '@jest/globals';
 import { XMLParser } from 'fast-xml-parser';
+import orchestrator from '../../orchestrator';
 
 describe('Create Entry Tests on DICT ', () => {
-  test('Create passing a valid body', async () => {
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Create passing a valid body', async () => {
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -30,21 +30,21 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    expect(fetchedData.headers.get('content-type')).toBe('application/xml');
-    expect(fetchedData.status).toBe(201);
-  });
+		expect(fetchedData.headers.get('content-type')).toBe('application/xml');
+		expect(fetchedData.status).toBe(201);
+	});
 
-  test('Create with an existing key', async () => {
-    const key = crypto.randomUUID();
-    await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Create with an existing key', async () => {
+		const key = crypto.randomUUID();
+		await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -65,15 +65,15 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -95,21 +95,23 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-    expect(fetchedData.status).toBe(403);
-  });
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(403);
+	});
 
-  test('Create with an inexists owner', async () => {
-    const key = crypto.randomUUID();
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Create with an inexists owner', async () => {
+		const key = crypto.randomUUID();
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -130,39 +132,46 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-    expect(fetchedData.status).toBe(403);
-  });
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(403);
+	});
 
+	test('Create without passing a body', async () => {
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+		});
 
-  test('Create without passing a body', async () => {
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-    })
+		const body = new XMLParser().parse(await fetchedData.text());
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(400);
+		expect(body['?xml']).toBe('');
+		expect(body.problem.type).toBe(
+			'https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid',
+		);
+		expect(body.problem.title).toBe('Entry is invalid');
+		expect(body.problem.status).toBe(400);
+		expect(body.problem.detail).toBe('Entry has invalid fields');
+		expect(body.problem.violations.violation.reason).toBe(
+			'Entry has invalid body',
+		);
+		expect(body.problem.violations.violation.value).toBe('No body detected');
+		expect(body.problem.violations.violation.property).toBe('entry');
+	});
 
-    const body = new XMLParser().parse(await fetchedData.text());
-    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-    expect(fetchedData.status).toBe(400);
-    expect(body['?xml']).toBe('');
-    expect(body.problem.type).toBe('https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid');
-    expect(body.problem.title).toBe('Entry is invalid');
-    expect(body.problem.status).toBe(400);
-    expect(body.problem.detail).toBe('Entry has invalid fields');
-    expect(body.problem.violations.violation.reason).toBe('Entry has invalid body');
-    expect(body.problem.violations.violation.value).toBe('No body detected');
-    expect(body.problem.violations.violation.property).toBe('entry');
-  });
-
-  test('Create passing a body with invalid fields when owner is NATURAL_PERSON', async () => {
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Create passing a body with invalid fields when owner is NATURAL_PERSON', async () => {
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -184,30 +193,38 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    const body = new XMLParser().parse(await fetchedData.text());
-    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-    expect(fetchedData.status).toBe(400);
-    expect(body['?xml']).toBe('');
-    expect(body.problem.type).toBe('https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid');
-    expect(body.problem.title).toBe('Entry is invalid');
-    expect(body.problem.status).toBe(400);
-    expect(body.problem.detail).toBe('Entry has invalid fields');
+		const body = new XMLParser().parse(await fetchedData.text());
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(400);
+		expect(body['?xml']).toBe('');
+		expect(body.problem.type).toBe(
+			'https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid',
+		);
+		expect(body.problem.title).toBe('Entry is invalid');
+		expect(body.problem.status).toBe(400);
+		expect(body.problem.detail).toBe('Entry has invalid fields');
 
-    expect(body.problem.violations.violation.reason).toBe('TradeName is not required when Type is equal to NATURAL_PERSON.');
-    expect(body.problem.violations.violation.value).toBe('Some nme');
-    expect(body.problem.violations.violation.property).toBe('CreateEntryRequest.Entry.Owner.TradeName');
-  });
+		expect(body.problem.violations.violation.reason).toBe(
+			'TradeName is not required when Type is equal to NATURAL_PERSON.',
+		);
+		expect(body.problem.violations.violation.value).toBe('Some nme');
+		expect(body.problem.violations.violation.property).toBe(
+			'CreateEntryRequest.Entry.Owner.TradeName',
+		);
+	});
 
-  test('Create passing a body with invalid fields when owner is LEGAL_PERSON', async () => {
-    const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/xml'
-      },
-      body: `<?xml version="1.0" encoding="UTF-8" ?>
+	test('Create passing a body with invalid fields when owner is LEGAL_PERSON', async () => {
+		const fetchedData = await fetch(`${orchestrator.SERVER_URL}/dict/entries`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+			body: `<?xml version="1.0" encoding="UTF-8" ?>
 <CreateEntryRequest>
     <Signature></Signature>
     <Entry>
@@ -228,20 +245,28 @@ describe('Create Entry Tests on DICT ', () => {
     </Entry>
     <Reason>USER_REQUESTED</Reason>
     <RequestId>a946d533-7f22-42a5-9a9b-e87cd55c0f4d</RequestId>
-</CreateEntryRequest>`
-    })
+</CreateEntryRequest>`,
+		});
 
-    const body = new XMLParser().parse(await fetchedData.text());
-    expect(fetchedData.headers.get('content-type')).toBe('application/problem+xml');
-    expect(fetchedData.status).toBe(400);
-    expect(body['?xml']).toBe('');
-    expect(body.problem.type).toBe('https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid');
-    expect(body.problem.title).toBe('Entry is invalid');
-    expect(body.problem.status).toBe(400);
-    expect(body.problem.detail).toBe('Entry has invalid fields');
+		const body = new XMLParser().parse(await fetchedData.text());
+		expect(fetchedData.headers.get('content-type')).toBe(
+			'application/problem+xml',
+		);
+		expect(fetchedData.status).toBe(400);
+		expect(body['?xml']).toBe('');
+		expect(body.problem.type).toBe(
+			'https://dict.pi.rsfn.net.br/api/v2/error/EntryInvalid',
+		);
+		expect(body.problem.title).toBe('Entry is invalid');
+		expect(body.problem.status).toBe(400);
+		expect(body.problem.detail).toBe('Entry has invalid fields');
 
-    expect(body.problem.violations.violation.reason).toBe('TradeName is required when Type is equal to LEGAL_PERSON.');
-    expect(body.problem.violations.violation.value).toBe('Missing value');
-    expect(body.problem.violations.violation.property).toBe('CreateEntryRequest.Entry.Owner.TradeName');
-  });
+		expect(body.problem.violations.violation.reason).toBe(
+			'TradeName is required when Type is equal to LEGAL_PERSON.',
+		);
+		expect(body.problem.violations.violation.value).toBe('Missing value');
+		expect(body.problem.violations.violation.property).toBe(
+			'CreateEntryRequest.Entry.Owner.TradeName',
+		);
+	});
 });

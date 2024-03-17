@@ -1,49 +1,84 @@
-import swaggerPath from 'swagger-ui-dist/absolute-path';
-import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
+import type { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 import FastifyPlugin from 'fastify-plugin';
+import swaggerPath from 'swagger-ui-dist/absolute-path';
 
-import path from 'node:path';
 import fs from 'node:fs';
+import path from 'node:path';
 
+import type { Readable } from 'node:stream';
 import swaggerJsdoc from 'swagger-jsdoc';
 
 const defaultOptions: swaggerJsdoc.Options = {
-    definition: {
-        openapi: '3.1.0',
-        info: {
-            title: 'Bacen Simulator',
-            version: '0.0.1',
-            description: 'Documentation for a Bacen Simulator',
-        },  
-    },
-    apis: ['routes/**/*.yml'],
+	definition: {
+		openapi: '3.1.0',
+		info: {
+			title: 'Bacen Simulator',
+			version: '0.0.1',
+			description: 'Documentation for a Bacen Simulator',
+		},
+	},
+	apis: ['routes/**/*.yml'],
 };
 
 function SwaggerJsDocsUiPlugin(params?: {
-    route?: string,
-    options?: swaggerJsdoc.Options
+	route?: string;
+	options?: swaggerJsdoc.Options;
 }) {
-    function execute(fastify: FastifyInstance, _options: any, next: Function) {
-        const openapiSpecification = swaggerJsdoc(params?.options || defaultOptions);
+	function execute(
+		fastify: FastifyInstance,
+		_options: Readable,
+		next: () => void,
+	) {
+		const openapiSpecification = swaggerJsdoc(
+			params?.options || defaultOptions,
+		);
 
-        fastify.get('/swagger-ui.css', (_request: FastifyRequest, reply: FastifyReply) => {
-            reply.type('text/css').send(fs.readFileSync(path.join(swaggerPath(), `swagger-ui.css`)));
-        })
+		fastify.get(
+			'/swagger-ui.css',
+			(_request: FastifyRequest, reply: FastifyReply) => {
+				reply
+					.type('text/css')
+					.send(fs.readFileSync(path.join(swaggerPath(), 'swagger-ui.css')));
+			},
+		);
 
-        fastify.get('/swagger-ui-bundle.js', (_request: FastifyRequest, reply: FastifyReply) => {
-            reply.type('application/javascript').send(fs.readFileSync(path.join(swaggerPath(), `swagger-ui-bundle.js`)));
-        })
+		fastify.get(
+			'/swagger-ui-bundle.js',
+			(_request: FastifyRequest, reply: FastifyReply) => {
+				reply
+					.type('application/javascript')
+					.send(
+						fs.readFileSync(path.join(swaggerPath(), 'swagger-ui-bundle.js')),
+					);
+			},
+		);
 
-        fastify.get('/swagger-ui-standalone-preset.js', (_request: FastifyRequest, reply: FastifyReply) => {
-            reply.type('application/javascript').send(fs.readFileSync(path.join(swaggerPath(), `swagger-ui-standalone-preset.js`)));
-        })
+		fastify.get(
+			'/swagger-ui-standalone-preset.js',
+			(_request: FastifyRequest, reply: FastifyReply) => {
+				reply
+					.type('application/javascript')
+					.send(
+						fs.readFileSync(
+							path.join(swaggerPath(), 'swagger-ui-standalone-preset.js'),
+						),
+					);
+			},
+		);
 
-        fastify.get('/swagger.json', (_request: FastifyRequest, reply: FastifyReply) => {
-            reply.type('application/json').send(JSON.stringify(openapiSpecification));
-        })
+		fastify.get(
+			'/swagger.json',
+			(_request: FastifyRequest, reply: FastifyReply) => {
+				reply
+					.type('application/json')
+					.send(JSON.stringify(openapiSpecification));
+			},
+		);
 
-        fastify.get(params?.route || '/docs', (_request: FastifyRequest, reply: FastifyReply) => {
-            reply.type('text/html').send(`<!DOCTYPE html>
+		fastify.get(
+			params?.route || '/docs',
+			(_request: FastifyRequest, reply: FastifyReply) => {
+				reply.type('text/html').send(`<!DOCTYPE html>
             <html lang="en">
             <head>
               <meta charset="UTF-8">
@@ -86,14 +121,15 @@ function SwaggerJsDocsUiPlugin(params?: {
             </html>
             
 `);
-        })
+			},
+		);
 
-        next();
-    }
+		next();
+	}
 
-    return FastifyPlugin(execute, {
-        name: 'SwaggerJsDocsUiPlugin'
-    });
+	return FastifyPlugin(execute, {
+		name: 'SwaggerJsDocsUiPlugin',
+	});
 }
 
 export default SwaggerJsDocsUiPlugin;
