@@ -13,7 +13,9 @@
     "test:watch": "turbo run test:watch",
     "migration": "turbo run migration",
     "migration:run": "turbo run migration:run",
-    "migration:seed": "turbo run migration:seed"
+    "migration:seed": "turbo run migration:seed",
+    "compose:up": "docker-compose -f ./packages/docker/docker-compose.yml up -d",
+    "compose:down": "docker-compose -f ./packages/docker/docker-compose.yml down"
   },
   "config": {
     "commitizen": {
@@ -37,7 +39,6 @@
   "dependencies": {
     "sqlite3": "^5.1.7",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-dist": "^5.12.0",
     "ts-node": "^10.9.2"
   },
   "workspaces": [
