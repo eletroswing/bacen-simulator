@@ -15,7 +15,8 @@
         "noEmit": true,
         "paths": {
             "@api/*": ["./apps/api/*"],
-            "@repo/infra/*": ["./packages/infra/*"]
+            "@repo/infra/*": ["./packages/infra/*"],
+            "@spi/*": ["./apps/spi/*"]
         }
     },
     "exclude": ["node_modules"]
