@@ -3,11 +3,11 @@ export enum TransactionTypes {
 }
 
 export enum TransactionParticipants {
-    SPI,
-    PSP_1,
-    PSP_2,
-    EVERY_ONE,
-    EVERY_PSP,
+    SPI = "SPI",
+    PSP_1 = "PSP_1",
+    PSP_2 = "PSP_2",
+    EVERY_ONE = "EVERY_ONE",
+    EVERY_PSP = "EVERY_PSP",
 }
 
 export interface Transaction {
@@ -19,12 +19,12 @@ export interface Transaction {
 }
 
 export enum PossibleMessages {
-    ADMI_002,
-    PIBR_001,
-    PIBR_002,
-    PACS_008,
-    PACS_002,
-    PACS_004
+    ADMI_002 = "ADMI_002",
+    PIBR_001 = "PIBR_001",
+    PIBR_002 = "PIBR_002",
+    PACS_008 = "PACS_008",
+    PACS_002 = "PACS_002", 
+    PACS_004 = "PACS_004",
 }
 
 export interface TransactionSteps {

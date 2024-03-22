@@ -49,6 +49,8 @@ class TransactionManager {
             delete this.transactions[id];
             return
         }
+
+        return this.transactions[id]
     }
 
     createTransaction(id: string, type: TransactionTyping.TransactionTypes, doneCallback: () => void, expiredCallback: () => void){
