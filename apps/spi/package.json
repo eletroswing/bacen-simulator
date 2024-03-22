@@ -1,0 +1,25 @@
+{
+	"name": "@repo/spi",
+	"version": "0.0.1",
+	"description": "BacenSimulator spi microservice, focused on mantain and administrate all banks inside the system",
+	"scripts": {
+		"start": "ts-node -r tsconfig-paths/register main.ts",
+		"dev": "ts-node-dev -r tsconfig-paths/register main.ts",
+		"lint": "biome lint .",
+		"format": "biome check . --apply"
+	},
+	"repository": "https://github.com/eletroswing/bacen-simulator",
+	"author": "eletroswing",
+	"license": "MIT",
+	"dependencies": {
+		"mqtt": "^5.5.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.6.0",
+		"@jest/globals": "^29.7.0",
+		"@types/jest": "^29.5.12",
+		"@types/mqtt": "^2.5.0",
+		"dotenv": "^16.4.5",
+		"ts-jest": "^29.1.2"
+	}
+}
