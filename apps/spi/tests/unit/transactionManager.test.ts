@@ -15,7 +15,7 @@ describe("Testing transactionManager module", () => {
       const manager = new TransactionManager()
 
       const transaction = manager.createTransaction(crypto.randomUUID(), TransactionTypes.CREATE_PAYMENT, () => { }, () => { })
-      expect(transaction.transaction.current_step).toBe(-1)
+      expect(transaction.transaction.current_step).toBe(0)
       jest.runOnlyPendingTimers();
    })
 
@@ -24,7 +24,7 @@ describe("Testing transactionManager module", () => {
       const mockCallback = jest.fn();
 
       const transaction = manager.createTransaction(crypto.randomUUID(), TransactionTypes.CREATE_PAYMENT, () => { }, mockCallback)
-      expect(transaction.transaction.current_step).toBe(-1)
+      expect(transaction.transaction.current_step).toBe(0)
       
       expect(mockCallback).not.toHaveBeenCalled();
       jest.advanceTimersByTime(41000);
@@ -38,7 +38,7 @@ describe("Testing transactionManager module", () => {
 
       var transaction: any = manager.createTransaction(id, TransactionTypes.CREATE_PAYMENT, () => { }, () => {})
       transaction = manager.continueTransaction(id, TransactionParticipants.PSP_1, TransactionParticipants.SPI, PossibleMessages.PACS_004)
-      expect(transaction.transaction.current_step).toBe(0)
+      expect(transaction.transaction.current_step).toBe(1)
       jest.runOnlyPendingTimers();
    })
 
@@ -70,5 +70,15 @@ describe("Testing transactionManager module", () => {
 
       expect(mockCallback).toHaveBeenCalled()
       jest.runOnlyPendingTimers();
+   })
+
+   test("Create 2 transactions with the same id must be impossible", () => {
+      const id = crypto.randomUUID();
+      const manager = new TransactionManager()
+
+      manager.createTransaction(id, TransactionTypes.CREATE_PAYMENT, () => {}, () => {})
+      expect(() => {
+         manager.createTransaction(id, TransactionTypes.CREATE_PAYMENT, () => {}, () => {});
+     }).toThrow();
    })
 });

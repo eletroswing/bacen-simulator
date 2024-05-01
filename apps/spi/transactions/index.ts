@@ -33,15 +33,13 @@ class TransactionManager {
     }
 
     continueTransaction(id: string, emitter: TransactionTyping.TransactionParticipants, receiver: TransactionTyping.TransactionParticipants, message: TransactionTyping.PossibleMessages) {
-        this.transactions[id].transaction.current_step = this.transactions[id].transaction.current_step + 1;
-
         if(
             this.transactions[id].steps[this.transactions[id].transaction.current_step].message !== message ||
             this.transactions[id].steps[this.transactions[id].transaction.current_step].participant_destiny !== receiver ||
             this.transactions[id].steps[this.transactions[id].transaction.current_step].participants_owner !== emitter 
-        ) {
-            throw new Error(`Received package doest match with expected package at this type of transaction`)
-        }
+        ) throw new Error(`Received package doest match with expected package at this type of transaction`)
+
+        this.transactions[id].transaction.current_step = this.transactions[id].transaction.current_step + 1;
 
         if(this.transactions[id].transaction.current_step === this.transactions[id].transaction.total_steps) {
             this.transactions[id].doneCallback(this.transactions[id])
@@ -54,12 +52,14 @@ class TransactionManager {
     }
 
     createTransaction(id: string, type: TransactionTyping.TransactionTypes, doneCallback: () => void, expiredCallback: () => void){
+        if(this.transactions[id]) throw new Error("Already exists an transaction with the given id.");
+
         this.transactions[id] = {
             transaction: {
                 created_at: new Date().toISOString(),
-                current_step: -1,
+                current_step: 0,
                 id: id,
-                total_steps: Object.keys(this.possible_transactions[type]).length -1,
+                total_steps: Object.keys(this.possible_transactions[type]).length ,
                 type: type
             },
             steps: this.possible_transactions[type],
